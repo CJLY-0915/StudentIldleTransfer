@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">SIT</string>
+    <string name="title_activity_index">IndexActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">你好，欢迎使用</string>
+    <string name="search_text">请输入搜索内容</string>
+    <string name="search">搜索</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="regarding_dialog_title">关于校闲转App</string>
+    <string name="regarding_dialog_message">
+        作为即将毕业的大学生,闲置物品的处理是一个棘手的问题。为了响应国家资源循环利用的号召,
+        我们参照闲鱼和转转设计了这款校闲转App,让校园内的同学可以在一个小众的平台上轻松和安全
+        的交易物品。如果在使用过程中发现了Bug或有什么好的建议,欢迎向我们反馈!我们的邮箱:123@qq.com
+    </string>
+    <string name="welcome">欢迎来到校闲转</string>
+    <string name="username_tips">请输入用户名</string>
+    <string name="password_tips">请输入密码</string>
+    <string name="registry_text">注册</string>
+    <string name="login_text">登录</string>
+    <string name="login_bottom_text">版权所有,侵权必究</string>
+    <string name="login_access">同意隐私协议</string>
+
+    <string name="reg_welcome">欢迎新用户注册</string>
+    <string name="reg_username_tip">用户名包含字母和数字</string>
+    <string name="reg_password_tip">密码由数字大小写字母组成</string>
+    <string name="reg_re_password_tip">再次确认密码</string>
+    <string name="reg_back">返回</string>
+    <string name="reg_confirm">注册</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="home_item_title">标题</string>
+    <string name="home_item_price">200.00</string>
+    <string name="money_icon">￥</string>
+
+    <string name="personal_center_nickname">昵称</string>
+    <string name="personal_center_myFollow">我的关注</string>
+    <string name="personal_center_addressManage">地址管理</string>
+    <string name="personal_center_myTransaction">我的交易</string>
+    <string name="personal_center_my_release">我发布的</string>
+    <string name="personal_center_my_sale">我卖出的</string>
+    <string name="personal_center_my_buy">我买到的</string>
+
+    <string name="main_tab">首页</string>
+    <string name="sale_buy_tab">卖闲置</string>
+    <string name="personal_tab">我的</string>
+
+    <string name="edit_message_title">个人资料设置</string>
+    <string name="edit_user_logout">退出登录</string>
+
+    <string name="address_manage_title">我的收货地址</string>
+    <string name="address_add">添加收货地址</string>
+    <string name="address_save">保存</string>
+    <string name="address_remove_all">清空</string>
+
+    <string name="address_save_add">添加</string>
+    <string name="address_save_cancel">取消</string>
+
+    <string name="follow_title">我的关注</string>
+    <string name="release_title">我的发布</string>
+    <string name="release_list_btnText">修改</string>
+
+    <string name="release_edit_tip_des">商品描述</string>
+    <string name="release_edit_change_tip">点击更换预览图</string>
+    <string name="release_edit_tip_desHint">请添加简短的描述</string>
+    <string name="release_edit_tip_price">商品价格</string>
+
+    <string name="sell_title">我卖出的</string>
+    <string name="sell_price_tips">实收款:</string>
+
+    <string name="buy_title">我买到的</string>
+    <string name="buy_price_tips">实付款:</string>
+
+    <string name="order_payment">确认订单</string>
+
+    <string name="publish_submit">发布</string>
+    <string name="publish_des_tips">介绍一下商品吧...</string>
+    <string name="publish_add_img_tips">添加商品预览图(不超过3张)</string>
+    <string name="publish_location_text">无法获取位置信息,请检查手机定位是否开启</string>
+    <string name="publish_price_tips">价格</string>
+    <string name="title_activity_tt">ttActivity</string>
+</resources>

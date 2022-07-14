@@ -1,0 +1,486 @@
+@startuml
+
+title __WIDGET's Class Diagram__\n
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.CanvasLegacy {
+          {static} ~ CLIP_SAVE_FLAG : int
+          {static} ~ CLIP_TO_LAYER_SAVE_FLAG : int
+          {static} ~ FULL_COLOR_LAYER_SAVE_FLAG : int
+          {static} ~ HAS_ALPHA_LAYER_SAVE_FLAG : int
+          {static} ~ MATRIX_SAVE_FLAG : int
+          {static} - SAVE : Method
+          {static} ~ saveLayer()
+          {static} - sneakyThrow()
+          {static} - sneakyThrow0()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EImageView {
+          + EImageView()
+          + EImageView()
+          + EImageView()
+          # onDraw()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseAlertDialog {
+          - bundle : Bundle
+          - msg : String
+          - showCancel : boolean
+          - title : String
+          + EaseAlertDialog()
+          + EaseAlertDialog()
+          + EaseAlertDialog()
+          + EaseAlertDialog()
+          + EaseAlertDialog()
+          + EaseAlertDialog()
+          + onCancel()
+          + onOk()
+          # onCreate()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      interface com.hyphenate.easeui.widget.EaseAlertDialog.AlertDialogUser {
+          {abstract} + onResult()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseImageView {
+          {static} - BITMAP_CONFIG : Config
+          {static} - COLORDRAWABLE_DIMENSION : int
+          - borderColor : int
+          - borderWidth : int
+          - height : int
+          - pressAlpha : int
+          - pressColor : int
+          - pressPaint : Paint
+          - radius : int
+          - shapeType : int
+          - width : int
+          + EaseImageView()
+          + EaseImageView()
+          + EaseImageView()
+          + onTouchEvent()
+          + setBorderColor()
+          + setBorderWidth()
+          + setPressAlpha()
+          + setPressColor()
+          + setRadius()
+          + setShapeType()
+          + setShapeType()
+          # onDraw()
+          # onSizeChanged()
+          - drawBorder()
+          - drawDrawable()
+          - drawPress()
+          - getBitmapFromDrawable()
+          - init()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      enum ShapeType {
+        NONE
+        RECTANGLE
+        ROUND
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseRecyclerView {
+          {static} - BASE_FOOTER_VIEW_TYPE : int
+          {static} - BASE_HEADER_VIEW_TYPE : int
+          - isShouldSpan : boolean
+          - isStaggered : boolean
+          - mAdapter : Adapter
+          - mFooterViewInfos : List<FixedViewInfo>
+          - mHeaderViewInfos : List<FixedViewInfo>
+          - mObserver : AdapterDataObserver
+          + EaseRecyclerView()
+          + EaseRecyclerView()
+          + EaseRecyclerView()
+          + addFooterView()
+          + addHeaderView()
+          + getChildBindingAdapterPosition()
+          + getChildViewHolder()
+          + getFootersCount()
+          + getHeadersCount()
+          + removeHeaderViews()
+          + setAdapter()
+          + setLayoutManager()
+          + showContextMenuForChild()
+          # getContextMenuInfo()
+          ~ getChildViewHolderInt()
+          - viewHolder()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseRecyclerView.FixedViewInfo {
+          + view : View
+          + viewType : int
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseRecyclerView.RecyclerViewContextMenuInfo {
+          + id : long
+          + position : int
+          + RecyclerViewContextMenuInfo()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseRecyclerView.ViewHolder {
+          + ViewHolder()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseRecyclerView.WrapperRecyclerViewAdapter {
+          - mAdapter : Adapter
+          + WrapperRecyclerViewAdapter()
+          + adjustSpanSize()
+          + findRelativeAdapterPositionIn()
+          + getAdapter()
+          + getContentCount()
+          + getItemCount()
+          + getItemId()
+          + getItemViewType()
+          + isFooter()
+          + isHeader()
+          + isHeaderOrFooter()
+          + isHeaderOrFooter()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseRoundImageView {
+          - context : Context
+          - paint : Paint
+          - paint2 : Paint
+          - roundHeight : int
+          - roundWidth : int
+          + EaseRoundImageView()
+          + EaseRoundImageView()
+          + EaseRoundImageView()
+          # onDraw()
+          - drawLiftDown()
+          - drawLiftUp()
+          - drawRightDown()
+          - drawRightUp()
+          - init()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseRoundImageView.CanvasLegacy {
+          {static} ~ CLIP_SAVE_FLAG : int
+          {static} ~ CLIP_TO_LAYER_SAVE_FLAG : int
+          {static} ~ FULL_COLOR_LAYER_SAVE_FLAG : int
+          {static} ~ HAS_ALPHA_LAYER_SAVE_FLAG : int
+          {static} ~ MATRIX_SAVE_FLAG : int
+          {static} - SAVE : Method
+          {static} ~ saveLayer()
+          {static} - sneakyThrow()
+          {static} - sneakyThrow0()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseSearchEditText {
+          - mLeftHeight : float
+          - mLeftWidth : float
+          - mRightHeight : float
+          - mRightWidth : float
+          + EaseSearchEditText()
+          + EaseSearchEditText()
+          + EaseSearchEditText()
+          - init()
+          - setDrawables()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseSearchTextView {
+          - DEFAULT_DRAWABLE_PADDING : int
+          - DEFAULT_SIZE : float
+          - mContext : Context
+          - mLeftHeight : float
+          - mLeftWidth : float
+          - mRightHeight : float
+          - mRightWidth : float
+          + EaseSearchTextView()
+          + EaseSearchTextView()
+          + EaseSearchTextView()
+          - dip2px()
+          - init()
+          - setDrawable()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseSidebar {
+          {static} - DEFAULT_COLOR : String
+          {static} - DEFAULT_TEXT_SIZE : float
+          - ItemHeight : float
+          - context : Context
+          - mBgColor : int
+          - mHeight : int
+          - mTextCoefficient : float
+          - mTextColor : int
+          - mTextSize : float
+          - mWidth : int
+          - paint : Paint
+          - sections : String[]
+          - topText : String
+          + EaseSidebar()
+          + EaseSidebar()
+          + EaseSidebar()
+          + drawBackground()
+          + drawBackgroundDrawable()
+          + drawBackgroundDrawable()
+          + onTouchEvent()
+          + setOnTouchEventListener()
+          # onDraw()
+          # onSizeChanged()
+          - checkTextSize()
+          - init()
+          - initAttrs()
+          - sectionForPoint()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      interface com.hyphenate.easeui.widget.EaseSidebar.OnTouchEventListener {
+          {abstract} + onActionDown()
+          {abstract} + onActionMove()
+          {abstract} + onActionUp()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseTitleBar {
+          # leftImage : ImageView
+          # leftLayout : RelativeLayout
+          # rightImage : ImageView
+          # rightLayout : RelativeLayout
+          # titleLayout : RelativeLayout
+          # titleView : TextView
+          - context : Context
+          - mArrowColor : int
+          - mArrowColorId : int
+          - mDisplayHomeAsUpEnabled : boolean
+          - mHeight : int
+          - mTitleTextColor : int
+          - mWidth : int
+          - titleMenu : TextView
+          - toolbar : Toolbar
+          + EaseTitleBar()
+          + EaseTitleBar()
+          + EaseTitleBar()
+          {static} + dip2px()
+          + getLeftLayout()
+          + getRightImage()
+          + getRightLayout()
+          + getRightText()
+          + getTitle()
+          + getToolbar()
+          + onClick()
+          + setBackgroundColor()
+          + setLeftImageResource()
+          + setLeftLayoutClickListener()
+          + setLeftLayoutVisibility()
+          + setOnBackPressListener()
+          + setOnRightClickListener()
+          + setRightImageResource()
+          + setRightLayoutClickListener()
+          + setRightLayoutVisibility()
+          + setRightTitle()
+          + setRightTitleResource()
+          + setTitle()
+          + setTitlePosition()
+          + setToolbarCustomColor()
+          + setToolbarCustomColorDefault()
+          {static} + sp2px()
+          # onSizeChanged()
+          - init()
+          - initLayout()
+          - initToolbar()
+          - parseStyle()
+          - setTitlePosition()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      interface com.hyphenate.easeui.widget.EaseTitleBar.OnBackPressListener {
+          {abstract} + onBackPress()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      interface com.hyphenate.easeui.widget.EaseTitleBar.OnRightClickListener {
+          {abstract} + onRightClick()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      enum TitlePosition {
+        Center
+        Left
+        Right
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseVoiceRecorderView {
+          # context : Context
+          # inflater : LayoutInflater
+          # ivIcon : ImageView
+          # micImage : ImageView
+          # micImageHandler : Handler
+          # micImages : Drawable[]
+          # recordingHint : TextView
+          # voiceRecorder : EaseVoiceRecorder
+          # wakeLock : WakeLock
+          + EaseVoiceRecorderView()
+          + EaseVoiceRecorderView()
+          + EaseVoiceRecorderView()
+          {static} + dip2px()
+          + discardRecording()
+          + getVoiceFileName()
+          + getVoiceFilePath()
+          + isRecording()
+          + onPressToSpeakBtnTouch()
+          + showMoveUpToCancelHint()
+          + showReleaseToCancelHint()
+          + startRecording()
+          + stopRecoding()
+          - init()
+          - setTextContent()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      interface com.hyphenate.easeui.widget.EaseVoiceRecorderView.EaseVoiceRecorderCallback {
+          {abstract} + onVoiceRecordComplete()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.MyChronometer {
+          + MyChronometer()
+          + MyChronometer()
+          + MyChronometer()
+          # onWindowVisibilityChanged()
+      }
+    }
+  }
+  
+
+  com.hyphenate.easeui.widget.EaseAlertDialog o-- com.hyphenate.easeui.widget.EaseAlertDialog.AlertDialogUser : user
+  com.hyphenate.easeui.widget.EaseAlertDialog +-down- com.hyphenate.easeui.widget.EaseAlertDialog.AlertDialogUser
+  com.hyphenate.easeui.widget.EaseImageView +-down- com.hyphenate.easeui.widget.EaseImageView.ShapeType
+  com.hyphenate.easeui.widget.EaseRecyclerView o-- com.hyphenate.easeui.widget.EaseRecyclerView.RecyclerViewContextMenuInfo : mContextMenuInfo
+  com.hyphenate.easeui.widget.EaseRecyclerView +-down- com.hyphenate.easeui.widget.EaseRecyclerView.FixedViewInfo
+  com.hyphenate.easeui.widget.EaseRecyclerView +-down- com.hyphenate.easeui.widget.EaseRecyclerView.RecyclerViewContextMenuInfo
+  com.hyphenate.easeui.widget.EaseRecyclerView +-down- com.hyphenate.easeui.widget.EaseRecyclerView.ViewHolder
+  com.hyphenate.easeui.widget.EaseRecyclerView +-down- com.hyphenate.easeui.widget.EaseRecyclerView.WrapperRecyclerViewAdapter
+  com.hyphenate.easeui.widget.EaseRecyclerView.RecyclerViewContextMenuInfo .up.|> ContextMenu.ContextMenuInfo
+  com.hyphenate.easeui.widget.EaseRoundImageView +-down- com.hyphenate.easeui.widget.EaseRoundImageView.CanvasLegacy
+  com.hyphenate.easeui.widget.EaseSidebar o-- com.hyphenate.easeui.widget.EaseSidebar.OnTouchEventListener : mListener
+  com.hyphenate.easeui.widget.EaseSidebar +-down- com.hyphenate.easeui.widget.EaseSidebar.OnTouchEventListener
+  com.hyphenate.easeui.widget.EaseTitleBar .up.|> View.OnClickListener
+  com.hyphenate.easeui.widget.EaseTitleBar o-- com.hyphenate.easeui.widget.EaseTitleBar.OnBackPressListener : mBackPressListener
+  com.hyphenate.easeui.widget.EaseTitleBar o-- com.hyphenate.easeui.widget.EaseTitleBar.OnRightClickListener : mOnRightClickListener
+  com.hyphenate.easeui.widget.EaseTitleBar +-down- com.hyphenate.easeui.widget.EaseTitleBar.OnBackPressListener
+  com.hyphenate.easeui.widget.EaseTitleBar +-down- com.hyphenate.easeui.widget.EaseTitleBar.OnRightClickListener
+  com.hyphenate.easeui.widget.EaseTitleBar +-down- com.hyphenate.easeui.widget.EaseTitleBar.TitlePosition
+  com.hyphenate.easeui.widget.EaseVoiceRecorderView +-down- com.hyphenate.easeui.widget.EaseVoiceRecorderView.EaseVoiceRecorderCallback
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

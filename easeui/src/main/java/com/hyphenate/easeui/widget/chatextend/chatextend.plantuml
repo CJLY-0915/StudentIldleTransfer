@@ -1,0 +1,189 @@
+@startuml
+
+title __CHATEXTEND's Class Diagram__\n
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatextend {
+        class com.hyphenate.easeui.widget.chatextend.HorizontalPageLayoutManager {
+            - allItemFrames : SparseArray<Rect>
+            - columns : int
+            - heightMode : int
+            - isUseSetHeight : boolean
+            - itemHeight : int
+            - itemHeightUsed : int
+            - itemSetHeight : int
+            - itemWidth : int
+            - itemWidthUsed : int
+            - offsetX : int
+            - offsetY : int
+            - onePageSize : int
+            - pageSize : int
+            - rows : int
+            - totalHeight : int
+            - totalWidth : int
+            + HorizontalPageLayoutManager()
+            + canScrollHorizontally()
+            + computeHorizontalScrollExtent()
+            + computeHorizontalScrollOffset()
+            + computeHorizontalScrollRange()
+            + generateDefaultLayoutParams()
+            + isAutoMeasureEnabled()
+            + isLastColumn()
+            + isLastRow()
+            + isPageLast()
+            + onDetachedFromWindow()
+            + onLayoutChildren()
+            + onMeasure()
+            + scrollHorizontallyBy()
+            + setItemHeight()
+            - computePageSize()
+            - getUsableHeight()
+            - getUsableWidth()
+            - getWrapItemHeight()
+            - recycleAndFillItems()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatextend {
+        interface com.hyphenate.easeui.widget.chatextend.PageDecorationLastJudge {
+            {abstract} + isLastColumn()
+            {abstract} + isLastRow()
+            {abstract} + isPageLast()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatextend {
+        class com.hyphenate.easeui.widget.chatextend.PagingItemDecoration {
+            ~ mPageDecorationLastJudge : PageDecorationLastJudge
+            {static} - ATTRS : int[]
+            - mDivider : Drawable
+            + PagingItemDecoration()
+            + drawHorizontal()
+            + drawVertical()
+            + getItemOffsets()
+            + onDraw()
+            + setDrawable()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatextend {
+        class com.hyphenate.easeui.widget.chatextend.PagingScrollHelper {
+            ~ mAnimator : ValueAnimator
+            ~ mRecyclerView : RecyclerView
+            ~ startX : int
+            ~ startY : int
+            - currentPosition : int
+            - firstTouch : boolean
+            - lastPageIndex : int
+            - offsetX : int
+            - offsetY : int
+            + checkCurrentStatus()
+            + getPageCount()
+            + scrollToPosition()
+            + setOnPageChangeListener()
+            + setUpRecycleView()
+            + updateLayoutManger()
+            - getPageIndex()
+            - getStartPageIndex()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatextend {
+        class com.hyphenate.easeui.widget.chatextend.PagingScrollHelper.MyOnTouchListener {
+            + onTouch()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatextend {
+        enum ORIENTATION {
+          HORIZONTAL
+          NULL
+          VERTICAL
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatextend {
+        class com.hyphenate.easeui.widget.chatextend.PagingScrollHelper.PageOnFlingListener {
+            + onFling()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatextend {
+        class com.hyphenate.easeui.widget.chatextend.PagingScrollHelper.PageOnScrollListener {
+            + onScrollStateChanged()
+            + onScrolled()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatextend {
+        interface com.hyphenate.easeui.widget.chatextend.PagingScrollHelper.onPageChangeListener {
+            {abstract} + onPageChange()
+        }
+      }
+    }
+  }
+  
+
+  com.hyphenate.easeui.widget.chatextend.HorizontalPageLayoutManager .up.|> PageDecorationLastJudge
+  com.hyphenate.easeui.widget.chatextend.PagingScrollHelper o-- com.hyphenate.easeui.widget.chatextend.PagingScrollHelper.PageOnFlingListener : mOnFlingListener
+  com.hyphenate.easeui.widget.chatextend.PagingScrollHelper o-- com.hyphenate.easeui.widget.chatextend.PagingScrollHelper.onPageChangeListener : mOnPageChangeListener
+  com.hyphenate.easeui.widget.chatextend.PagingScrollHelper o-- com.hyphenate.easeui.widget.chatextend.PagingScrollHelper.PageOnScrollListener : mOnScrollListener
+  com.hyphenate.easeui.widget.chatextend.PagingScrollHelper o-- com.hyphenate.easeui.widget.chatextend.PagingScrollHelper.MyOnTouchListener : mOnTouchListener
+  com.hyphenate.easeui.widget.chatextend.PagingScrollHelper o-- com.hyphenate.easeui.widget.chatextend.PagingScrollHelper.ORIENTATION : mOrientation
+  com.hyphenate.easeui.widget.chatextend.PagingScrollHelper +-down- com.hyphenate.easeui.widget.chatextend.PagingScrollHelper.MyOnTouchListener
+  com.hyphenate.easeui.widget.chatextend.PagingScrollHelper +-down- com.hyphenate.easeui.widget.chatextend.PagingScrollHelper.ORIENTATION
+  com.hyphenate.easeui.widget.chatextend.PagingScrollHelper +-down- com.hyphenate.easeui.widget.chatextend.PagingScrollHelper.PageOnFlingListener
+  com.hyphenate.easeui.widget.chatextend.PagingScrollHelper +-down- com.hyphenate.easeui.widget.chatextend.PagingScrollHelper.PageOnScrollListener
+  com.hyphenate.easeui.widget.chatextend.PagingScrollHelper +-down- com.hyphenate.easeui.widget.chatextend.PagingScrollHelper.onPageChangeListener
+  com.hyphenate.easeui.widget.chatextend.PagingScrollHelper.MyOnTouchListener .up.|> View.OnTouchListener
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

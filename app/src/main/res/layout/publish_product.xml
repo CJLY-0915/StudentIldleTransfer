@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/white"
+    tools:context=".UI.Fragment.PublishProductActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/publish_product_submit"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="400dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/publish_btn"
+            android:text="@string/publish_submit"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/publish_product_text"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:background="@drawable/publish_text"
+        android:gravity="top"
+        android:hint="@string/publish_des_tips"
+        android:maxLines="6"
+        android:padding="3dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <ImageView
+        android:id="@+id/publish_product_img1"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/publish_text"
+        android:scaleType="centerInside"
+        android:src="@drawable/publish_product_add_img"
+        app:layout_constraintBottom_toBottomOf="@+id/publish_product_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/publish_product_text"
+        app:layout_constraintVertical_bias="0.97" />
+
+    <ImageView
+        android:id="@+id/publish_product_img2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:visibility="invisible"
+        android:background="@drawable/publish_text"
+        android:scaleType="centerInside"
+        android:src="@drawable/publish_product_add_img"
+        app:layout_constraintBottom_toBottomOf="@+id/publish_product_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toEndOf="@+id/publish_product_img1"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.971" />
+
+    <ImageView
+        android:id="@+id/publish_product_img3"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/publish_text"
+        android:scaleType="centerInside"
+        android:src="@drawable/publish_product_add_img"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/publish_product_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/publish_product_img2"
+        app:layout_constraintTop_toTopOf="@+id/publish_product_text"
+        app:layout_constraintVertical_bias="0.97" />
+
+    <TextView
+        android:id="@+id/publish_product_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/publish_add_img_tips"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/publish_product_text"
+        app:layout_constraintStart_toEndOf="@+id/publish_product_img1"
+        app:layout_constraintTop_toTopOf="@+id/publish_product_text"
+        app:layout_constraintVertical_bias="0.976"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/location_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/publish_product_text" />
+
+    <TextView
+        android:id="@+id/publish_product_current_location"
+        android:layout_width="320dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/publish_location_text"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/publish_product_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/publish_product_text"
+        app:layout_constraintVertical_bias="0.319">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/publish_price_tips"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/publish_product_price"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:hint="价格"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:focusable="true"
+            android:background="@drawable/price_text"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/main_page_image"
+            android:layout_width="52dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="75dp"
+            android:background="@mipmap/main_tab_not_active" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-50dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/main_tab"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/sale_page_image"
+            android:layout_width="52dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="85dp"
+            android:background="@mipmap/sale_buy_tab_active" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-58dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/sale_buy_tab"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/personal_page_image"
+            android:layout_width="52dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="75dp"
+            android:background="@mipmap/personal_tab_not_active" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-50dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/personal_tab"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

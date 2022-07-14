@@ -1,0 +1,245 @@
+@startuml
+
+title __UTILS's Class Diagram__\n
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.ActivityCollectorUtil {
+            {static} - activityList : List<Activity>
+            {static} - instance : ActivityCollectorUtil
+            + ActivityCollectorUtil()
+            + addActivity()
+            + finishAll()
+            {static} + getInstance()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.AddressManageDataUtil {
+            {static} + addressFullAds : TextView
+            {static} + addressFullAdsText : EditText
+            {static} + addressName : TextView
+            {static} + addressPhone : TextView
+            {static} + addressPhoneText : EditText
+            {static} + addressUserNameText : EditText
+            {static} + getEditAddressMessage()
+            {static} + handleAddMessageData()
+            {static} + setFirstShowMessage()
+            {static} + setUploadMessage()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.BarStatusUtil {
+            {static} + setBarBackgroundColor()
+            {static} + setStatusBar()
+            {static} + setTitleBarHide()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.BitmapUtil {
+            {static} + bitmapToUrl()
+            {static} + createShortUUID()
+            {static} + getAboSdPath()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.DrawCircleImageViewUtil {
+            - mPaint : Paint
+            - mRadius : int
+            - mScale : float
+            + DrawCircleImageViewUtil()
+            + DrawCircleImageViewUtil()
+            + DrawCircleImageViewUtil()
+            # onDraw()
+            # onMeasure()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.EditMessageUtil {
+            {static} + isAble : boolean
+            {static} + setEditIsAble()
+            {static} + setEditIsNotAble()
+            {static} + showUserMessage()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.GetCharCombineUtil {
+            + getPwdCharCombine()
+            + getUserNameCharCombine()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.GlobalExitUtil {
+            {static} + clickFirstTime : long
+            {static} + clickSecondTime : long
+            {static} + Exit()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.InitDataUtil {
+            - goodsList : List<Goods>
+            - photoList : List<List<GoodsPhoto>>
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.JsonUtil {
+            {static} + getDataArray()
+            {static} + getDataJson()
+            {static} + getJson()
+            {static} + getMessage()
+            {static} + getStatusCode()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.LoginUtil {
+            {static} + account : String
+            {static} + id : int
+            {static} + token : String
+            {static} - flag : boolean
+            {static} + getAccountId()
+            {static} + getCurrentAccount()
+            {static} + getToken()
+            {static} + getUserMessageMap()
+            {static} + handleInputUserMessage()
+            {static} + setAccount()
+            {static} + setCurrentUser()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.NotifyUtil {
+            {static} + createNotify()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.RegistryUtil {
+            {static} - flag : boolean
+            - regPwd : String
+            - regRePwd : String
+            - regUserName : String
+            + RegistryUtil()
+            + RegistryUtil()
+            + getRegUserMessage()
+            + handleInputUserMessage()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.SPUtil {
+            {static} ~ context : Context
+            {static} - sp : SharedPreferences
+            + SPUtil()
+            + getAccount()
+            + getPassword()
+            + getState()
+            + getToken()
+            + removeState()
+            + setAccount()
+            + setPassword()
+            + setState()
+            + setToken()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.SaveUrlToFileUtil {
+            {static} + getFile()
+        }
+      }
+    }
+  }
+  
+
+  com.example.sit.Utils.ActivityCollectorUtil -up-|> android.app.Application
+  com.example.sit.Utils.DrawCircleImageViewUtil -up-|> androidx.appcompat.widget.AppCompatImageView
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

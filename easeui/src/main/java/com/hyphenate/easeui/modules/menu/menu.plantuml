@@ -1,0 +1,239 @@
+@startuml
+
+title __MENU's Class Diagram__\n
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace menu {
+        class com.hyphenate.easeui.modules.menu.EasePopupMenuHelper {
+            - dismissListener : OnPopupMenuDismissListener
+            - itemClickListener : OnPopupMenuItemClickListener
+            - menu : Menu
+            - menuItems : List<MenuItemBean>
+            - pMenu : PopupMenu
+            - targetView : View
+            + EasePopupMenuHelper()
+            + addItemMenu()
+            + addItemMenu()
+            + clear()
+            {static} + dip2px()
+            + findItemVisible()
+            + initMenu()
+            + onDismiss()
+            + onMenuItemClick()
+            + setOnPopupMenuDismissListener()
+            + setOnPopupMenuItemClickListener()
+            + show()
+            + show()
+            - addMenuItem()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace menu {
+        class com.hyphenate.easeui.modules.menu.EasePopupWindow {
+            - mBackgroundDrawable : Drawable
+            - mCloseChangeBg : boolean
+            - mContext : Context
+            - mShowAlpha : float
+            + EasePopupWindow()
+            + EasePopupWindow()
+            + dismiss()
+            + getContext()
+            + setBackgroundAlpha()
+            + setBackgroundDrawable()
+            + setContentView()
+            + setOutsideTouchable()
+            + showAsDropDown()
+            + showAsDropDown()
+            + showAsDropDown()
+            + showAtLocation()
+            - addKeyListener()
+            - dismissAnimator()
+            - initBasePopupWindow()
+            - setWindowBackgroundAlpha()
+            - showAnimator()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace menu {
+        interface com.hyphenate.easeui.modules.menu.EasePopupWindow.OnPopupWindowDismissListener {
+            {abstract} + onDismiss()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace menu {
+        interface com.hyphenate.easeui.modules.menu.EasePopupWindow.OnPopupWindowItemClickListener {
+            {abstract} + onMenuItemClick()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace menu {
+        class com.hyphenate.easeui.modules.menu.EasePopupWindowHelper {
+            {static} - SPAN_COUNT : int
+            - background : Drawable
+            - context : Context
+            - dismissListener : OnPopupWindowDismissListener
+            {static} - icons : int[]
+            - itemClickListener : OnPopupWindowItemClickListener
+            {static} - itemIds : int[]
+            - layout : View
+            - menuItemMap : Map<Integer, MenuItemBean>
+            - menuItems : List<MenuItemBean>
+            - pMenu : EasePopupWindow
+            - rvMenuList : RecyclerView
+            {static} - titles : int[]
+            - touchable : boolean
+            - tvTitle : TextView
+            + EasePopupWindowHelper()
+            + addItemMenu()
+            + addItemMenu()
+            + clear()
+            + dismiss()
+            + findItem()
+            + findItemVisible()
+            + getPopupWindow()
+            + getView()
+            + initMenu()
+            + setBackgroundDrawable()
+            + setDefaultMenus()
+            + setOnPopupMenuDismissListener()
+            + setOnPopupMenuItemClickListener()
+            + setOutsideTouchable()
+            + show()
+            + showTitle()
+            - checkIfShowItems()
+            - showPre()
+            - sortList()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace menu {
+        class com.hyphenate.easeui.modules.menu.EasePopupWindowHelper.MenuAdapter {
+            + getViewHolder()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace menu {
+        class com.hyphenate.easeui.modules.menu.EasePopupWindowHelper.MenuAdapter.MenuViewHolder {
+            - ivActionIcon : ImageView
+            - tvActionName : TextView
+            + MenuViewHolder()
+            + initView()
+            + setData()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace menu {
+        class com.hyphenate.easeui.modules.menu.MenuItemBean {
+            - groupId : int
+            - itemId : int
+            - order : int
+            - resourceId : int
+            - title : String
+            - visible : boolean
+            + MenuItemBean()
+            + equals()
+            + getGroupId()
+            + getItemId()
+            + getOrder()
+            + getResourceId()
+            + getTitle()
+            + hashCode()
+            + isVisible()
+            + setGroupId()
+            + setItemId()
+            + setOrder()
+            + setResourceId()
+            + setTitle()
+            + setVisible()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace menu {
+        interface com.hyphenate.easeui.modules.menu.OnPopupMenuDismissListener {
+            {abstract} + onDismiss()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace menu {
+        interface com.hyphenate.easeui.modules.menu.OnPopupMenuItemClickListener {
+            {abstract} + onMenuItemClick()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace menu {
+        interface com.hyphenate.easeui.modules.menu.OnPopupMenuPreShowListener {
+            {abstract} + onMenuPreShow()
+        }
+      }
+    }
+  }
+  
+
+  com.hyphenate.easeui.modules.menu.EasePopupMenuHelper .up.|> PopupMenu.OnDismissListener
+  com.hyphenate.easeui.modules.menu.EasePopupMenuHelper .up.|> PopupMenu.OnMenuItemClickListener
+  com.hyphenate.easeui.modules.menu.EasePopupWindow +-down- com.hyphenate.easeui.modules.menu.EasePopupWindow.OnPopupWindowDismissListener
+  com.hyphenate.easeui.modules.menu.EasePopupWindow +-down- com.hyphenate.easeui.modules.menu.EasePopupWindow.OnPopupWindowItemClickListener
+  com.hyphenate.easeui.modules.menu.EasePopupWindowHelper o-- com.hyphenate.easeui.modules.menu.EasePopupWindowHelper.MenuAdapter : adapter
+  com.hyphenate.easeui.modules.menu.EasePopupWindowHelper +-down- com.hyphenate.easeui.modules.menu.EasePopupWindowHelper.MenuAdapter
+  com.hyphenate.easeui.modules.menu.EasePopupWindowHelper.MenuAdapter +-down- com.hyphenate.easeui.modules.menu.EasePopupWindowHelper.MenuAdapter.MenuViewHolder
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

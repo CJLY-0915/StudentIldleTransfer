@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/drawable-small/icon_index.xml" value="0.1285" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2975" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/drawable/add_address_btn.xml" value="0.1185" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/drawable/add_address_btn_circle.xml" value="0.1165" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/drawable/address_edit_board.xml" value="0.1165" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/drawable/boder.xml" value="0.1235" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/drawable/circle_board.xml" value="0.1" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/drawable/circle_board_btn.xml" value="0.137" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/drawable/circle_board_btn_logout.xml" value="0.137" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/drawable/circle_board_reg.xml" value="0.1185" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/drawable/follow_btn.xml" value="0.2385" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.137" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.2975" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2135" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1285" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/drawable/index_icon.xml" value="0.1285" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/drawable/linear_border.xml" value="0.1285" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/drawable/list_item.xml" value="0.148" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/drawable/price_text.xml" value="0.1" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/drawable/publish_btn.xml" value="0.171" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/drawable/publish_text.xml" value="0.1" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/drawable/rounded_border.xml" value="0.1" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/drawable/search_border.xml" value="0.2385" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/activity_buy.xml" value="0.25" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/activity_chat.xml" value="0.30055579307396324" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/activity_content.xml" value="0.30055579307396324" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/activity_detail.xml" value="0.22" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/activity_index.xml" value="0.1" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/activity_message.xml" value="0.34193840579710144" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/activity_search.xml" value="0.22025052192066805" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/activity_test_main.xml" value="0.34193840579710144" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/activity_tt.xml" value="0.12031408308004053" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/address_list_item.xml" value="0.25" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/address_manage.xml" value="0.17806484295845998" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/address_manage_add.xml" value="0.36614583333333334" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/address_manage_edit.xml" value="0.17806484295845998" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/address_manage_titelbar.xml" value="0.17806484295845998" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/buy_titelbar.xml" value="0.17806484295845998" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/buy_titlebar.xml" value="0.15876242095754292" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/cover.xml" value="0.33" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/detail_img_item.xml" value="0.15876242095754292" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/edit_personal_message.xml" value="0.25" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/edit_personal_message_titelbar.xml" value="0.25" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/follow.xml" value="0.25" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/follow_list_item.xml" value="0.33" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/follow_titelbar.xml" value="0.34601449275362317" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/fragment_index.xml" value="0.25" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/fragment_index_follow.xml" value="0.17806484295845998" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/fragment_index_list.xml" value="0.3515625" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/fragment_index_recommend.xml" value="0.17806484295845998" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/fragment_index_release.xml" value="0.17806484295845998" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/fragment_index_university.xml" value="0.17806484295845998" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/fragment_message.xml" value="0.17806484295845998" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/fragment_personal.xml" value="0.17806484295845998" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/fragment_release.xml" value="0.25" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/fragment_search.xml" value="0.17806484295845998" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/goods_item.xml" value="0.15" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/index_tab.xml" value="0.17806484295845998" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/login.xml" value="0.25" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/my_buy.xml" value="0.2" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/my_buy_list_item.xml" value="0.34601449275362317" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/my_release.xml" value="0.2" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/my_release_edit.xml" value="0.15" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/my_release_list_item.xml" value="0.17806484295845998" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/my_sell.xml" value="0.25" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/my_sell_list_item.xml" value="0.34601449275362317" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/personal_center.xml" value="0.25" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/publish_product.xml" value="0.17806484295845998" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/registry.xml" value="0.33" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/release_titelbar.xml" value="0.1" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/sell_titelbar.xml" value="0.34601449275362317" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/tab_image.xml" value="0.17806484295845998" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/tab_item_text.xml" value="0.17806484295845998" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/layout/tab_view.xml" value="0.17806484295845998" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3037037037037037" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/menu/option.xml" value="0.30055579307396324" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/menu/personal_setting.xml" value="0.30055579307396324" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1285" />
+        <entry key="..\:/program files/Android/SIT/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1235" />
+        <entry key="..\:/program files/Android/SIT/easeui/src/main/res/drawable/ease_alert_click_bg.xml" value="0.137" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

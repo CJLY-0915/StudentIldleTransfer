@@ -1,0 +1,167 @@
+@startuml
+
+title __CONTACT's Class Diagram__\n
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        class com.hyphenate.easeui.modules.contact.EaseContactLayout {
+            - canUseRefresh : boolean
+            - contactList : EaseContactListLayout
+            - floatingHeader : TextView
+            - sideBarContact : EaseSidebar
+            - sidebarPresenter : SidebarPresenter
+            - srlContactRefresh : SwipeRefreshLayout
+            + EaseContactLayout()
+            + EaseContactLayout()
+            + EaseContactLayout()
+            + canUseRefresh()
+            + getContactList()
+            + getSwipeRefreshLayout()
+            + loadDataFail()
+            + loadDataFinish()
+            + loadDefaultData()
+            + onRefresh()
+            + showNormal()
+            + showSimple()
+            - finishRefresh()
+            - initListener()
+            - initViews()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        class com.hyphenate.easeui.modules.contact.EaseContactListFragment {
+            + contactLayout : EaseContactLayout
+            + llRoot : LinearLayout
+            + getLayoutId()
+            + initData()
+            + initListener()
+            + initView()
+            + onActivityCreated()
+            + onCreateView()
+            + onItemClick()
+            + onMenuItemClick()
+            + onMenuPreShow()
+            + onViewCreated()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        class com.hyphenate.easeui.modules.contact.EaseContactListLayout {
+            - concatAdapter : ConcatAdapter
+            - contactSetModel : EaseContactSetStyle
+            - customAdapter : EaseContactCustomAdapter
+            - customItemClickListener : OnItemClickListener
+            - dismissListener : OnPopupMenuDismissListener
+            - itemListener : OnItemClickListener
+            - itemLongListener : OnItemLongClickListener
+            - listAdapter : EaseContactListAdapter
+            - loadListener : OnContactLoadListener
+            - menuHelper : EasePopupMenuHelper
+            - menuPreShowListener : OnPopupMenuPreShowListener
+            - popupMenuItemClickListener : OnPopupMenuItemClickListener
+            - presenter : EaseContactPresenter
+            - showDefaultMenu : boolean
+            - touchX : float
+            - touchY : float
+            + EaseContactListLayout()
+            + EaseContactListLayout()
+            + EaseContactListLayout()
+            + addCustomItem()
+            + addCustomItem()
+            + addFooterAdapter()
+            + addHeaderAdapter()
+            + addItemMenu()
+            + addNote()
+            + addNoteFail()
+            + addRVItemDecoration()
+            + clearMenu()
+            + context()
+            {static} + dip2px()
+            + dispatchTouchEvent()
+            + findItemVisible()
+            + getCustomAdapter()
+            + getItem()
+            + getListAdapter()
+            + getMenuHelper()
+            + getTouchX()
+            + getTouchY()
+            + loadContactListFail()
+            + loadContactListNoData()
+            + loadContactListSuccess()
+            + loadDefaultData()
+            + notifyDataSetChanged()
+            + refreshList()
+            + refreshList()
+            + removeAdapter()
+            + removeRVItemDecoration()
+            + setAvatarBorderColor()
+            + setAvatarBorderWidth()
+            + setAvatarDefaultSrc()
+            + setAvatarRadius()
+            + setAvatarShapeType()
+            + setAvatarSize()
+            + setData()
+            + setDataNotSort()
+            + setHeaderBackGround()
+            + setHeaderTextColor()
+            + setHeaderTextSize()
+            + setItemBackGround()
+            + setItemHeight()
+            + setOnContactLoadListener()
+            + setOnCustomItemClickListener()
+            + setOnItemClickListener()
+            + setOnItemLongClickListener()
+            + setOnPopupMenuDismissListener()
+            + setOnPopupMenuItemClickListener()
+            + setOnPopupMenuPreShowListener()
+            + setPresenter()
+            + setTitleTextColor()
+            + setTitleTextSize()
+            + showItemDefaultMenu()
+            + showItemHeader()
+            + sortContactListSuccess()
+            {static} + sp2px()
+            - addHeader()
+            - initAttrs()
+            - initListener()
+            - initViews()
+            - showDefaultMenu()
+        }
+      }
+    }
+  }
+  
+
+  com.hyphenate.easeui.modules.contact.EaseContactLayout .up.|> IContactLayout
+  com.hyphenate.easeui.modules.contact.EaseContactLayout .up.|> OnContactLoadListener
+  com.hyphenate.easeui.modules.contact.EaseContactLayout .up.|> SwipeRefreshLayout.OnRefreshListener
+  com.hyphenate.easeui.modules.contact.EaseContactListFragment .up.|> OnItemClickListener
+  com.hyphenate.easeui.modules.contact.EaseContactListFragment .up.|> OnPopupMenuItemClickListener
+  com.hyphenate.easeui.modules.contact.EaseContactListFragment .up.|> OnPopupMenuPreShowListener
+  com.hyphenate.easeui.modules.contact.EaseContactListLayout .up.|> IContactCustomListLayout
+  com.hyphenate.easeui.modules.contact.EaseContactListLayout .up.|> IContactListLayout
+  com.hyphenate.easeui.modules.contact.EaseContactListLayout .up.|> IContactListStyle
+  com.hyphenate.easeui.modules.contact.EaseContactListLayout .up.|> IEaseContactListView
+  com.hyphenate.easeui.modules.contact.EaseContactListLayout .up.|> IPopupMenu
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

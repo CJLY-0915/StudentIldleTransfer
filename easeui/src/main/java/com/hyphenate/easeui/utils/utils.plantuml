@@ -1,0 +1,421 @@
+@startuml
+
+title __UTILS's Class Diagram__\n
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.EaseCommonUtils {
+          {static} - TAG : String
+          {static} + createExpressionMessage()
+          {static} + dip2px()
+          {static} + getChatType()
+          {static} + getConversationType()
+          {static} + getLetter()
+          {static} + getMessageDigest()
+          {static} + getScreenInfo()
+          {static} + getTopActivity()
+          {static} + isNetWorkConnected()
+          {static} + isSdcardExist()
+          {static} + isSilentMessage()
+          {static} + isTimestamp()
+          {static} + setUserInitialLetter()
+          {static} + sp2px()
+          {static} ~ getString()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.EaseCommonUtils.GetInitialLetter {
+          - defaultLetter : String
+          + getLetter()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.EaseCompat {
+          {static} - TAG : String
+          {static} + deleteFile()
+          {static} + getFileNameByUri()
+          {static} + getMimeType()
+          {static} + getMimeType()
+          {static} + getMimeType()
+          {static} + getPath()
+          {static} + getSupportedWindowType()
+          {static} + getUriForFile()
+          {static} + getVideoThumbnail()
+          {static} + isImageType()
+          {static} + isVideoFile()
+          {static} + isVideoType()
+          {static} + openApk()
+          {static} + openFile()
+          {static} + openFile()
+          {static} + openFile()
+          {static} + openFile()
+          {static} + openImage()
+          {static} + openImage()
+          {static} + setIntentByType()
+          {static} + takePicture()
+          {static} + takePicture()
+          {static} + takeVideo()
+          {static} + takeVideo()
+          {static} - checkSuffix()
+          {static} - getCameraFile()
+          {static} - getCameraIntent()
+          {static} - getOpenImageIntent()
+          {static} - getVideoFile()
+          {static} - getVideoIntent()
+          {static} - openApk()
+          {static} - openFile()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.EaseDateUtils {
+          {static} - INTERVAL_IN_MILLISECONDS : long
+          {static} + StringToDate()
+          {static} + getBeforeYesterdayStartAndEndTime()
+          {static} + getCurrentMonthStartAndEndTime()
+          {static} + getLastMonthStartAndEndTime()
+          {static} + getTimestampStr()
+          {static} + getTimestampString()
+          {static} + getTodayStartAndEndTime()
+          {static} + getYesterdayStartAndEndTime()
+          {static} + is24HourFormat()
+          {static} + isCloseEnough()
+          {static} + toTime()
+          {static} + toTimeBySecond()
+          {static} - isSameDay()
+          {static} - isYesterday()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.EaseEditTextUtils {
+          {static} + changePwdDrawableRight()
+          {static} + clearEditTextListener()
+          {static} + ellipsizeMiddleString()
+          {static} + ellipsizeString()
+          {static} + highLightKeyword()
+          {static} + showRightDrawable()
+          {static} - getTakeUpCount()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.EaseFileUtils {
+          {static} - TAG : String
+          {static} + deleteFile()
+          {static} + getFileNameByUri()
+          {static} + getFilePath()
+          {static} + isDownloadsDocument()
+          {static} + isExternalStorageDocument()
+          {static} + isFileExistByUri()
+          {static} + isFileProvider()
+          {static} + isMediaDocument()
+          {static} + isOtherFileProvider()
+          {static} + saveUriPermission()
+          {static} + takePersistableUriPermission()
+          {static} + uriStartWithContent()
+          {static} + uriStartWithFile()
+          {static} - getLastSubFromUri()
+          {static} - isQ()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.EaseImageCache {
+          - cache : LruCache<String, Bitmap>
+          {static} - imageCache : EaseImageCache
+          + get()
+          {static} + getInstance()
+          + put()
+          - EaseImageCache()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.EaseImageUtils {
+          {static} + getImageMaxSize()
+          {static} + getImagePath()
+          {static} + getImagePathByFileName()
+          {static} + getImageShowSize()
+          {static} + getThumbnailImagePath()
+          {static} + getThumbnailImagePathByName()
+          {static} + imageToJpeg()
+          {static} + showImage()
+          {static} + showImage()
+          {static} + showVideoThumb()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.EaseLoadLocalBigImgTask {
+          - context : Context
+          - height : int
+          - path : String
+          - pb : ProgressBar
+          - photoView : EasePhotoView
+          - width : int
+          + EaseLoadLocalBigImgTask()
+          # doInBackground()
+          # onPostExecute()
+          # onPreExecute()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.EaseSmileUtils {
+          {static} + DELETE_KEY : String
+          {static} + ee_1 : String
+          {static} + ee_10 : String
+          {static} + ee_11 : String
+          {static} + ee_12 : String
+          {static} + ee_13 : String
+          {static} + ee_14 : String
+          {static} + ee_15 : String
+          {static} + ee_16 : String
+          {static} + ee_17 : String
+          {static} + ee_18 : String
+          {static} + ee_19 : String
+          {static} + ee_2 : String
+          {static} + ee_20 : String
+          {static} + ee_21 : String
+          {static} + ee_22 : String
+          {static} + ee_23 : String
+          {static} + ee_24 : String
+          {static} + ee_25 : String
+          {static} + ee_26 : String
+          {static} + ee_27 : String
+          {static} + ee_28 : String
+          {static} + ee_29 : String
+          {static} + ee_3 : String
+          {static} + ee_30 : String
+          {static} + ee_31 : String
+          {static} + ee_32 : String
+          {static} + ee_33 : String
+          {static} + ee_34 : String
+          {static} + ee_35 : String
+          {static} + ee_4 : String
+          {static} + ee_5 : String
+          {static} + ee_6 : String
+          {static} + ee_7 : String
+          {static} + ee_8 : String
+          {static} + ee_9 : String
+          {static} - emoticons : Map<Pattern, Object>
+          {static} - spannableFactory : Factory
+          {static} + addPattern()
+          {static} + addSmiles()
+          {static} + containsKey()
+          {static} + getSmiledText()
+          {static} + getSmilesSize()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.EaseUserUtils {
+          {static} + getUserInfo()
+          {static} + setUserAvatar()
+          {static} + setUserAvatarStyle()
+          {static} + setUserNick()
+          {static} + showUserAvatar()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.EaseVoiceLengthUtils {
+          {static} + getVoiceLength()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.HanziToPinyin {
+          {static} - TAG : String
+          - mAsciiTransliterator : Transliterator
+          - mPinyinTransliterator : Transliterator
+          {static} - sInstance : HanziToPinyin
+          + get()
+          {static} + getInstance()
+          {static} + getPinyin()
+          + hasChineseTransliterator()
+          + transliterate()
+          - HanziToPinyin()
+          - addToken()
+          - tokenize()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.HanziToPinyin.Token {
+          {static} + LATIN : int
+          {static} + PINYIN : int
+          {static} + SEPARATOR : String
+          {static} + UNKNOWN : int
+          + source : String
+          + target : String
+          + type : int
+          + Token()
+          + Token()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.RomUtils {
+          {static} + ROM_COOLPAD : String
+          {static} + ROM_EMUI : String
+          {static} + ROM_FLYME : String
+          {static} + ROM_LENOVO : String
+          {static} + ROM_LETV : String
+          {static} + ROM_MIUI : String
+          {static} + ROM_NUBIA : String
+          {static} + ROM_OPPO : String
+          {static} + ROM_QIKU : String
+          {static} + ROM_SMARTISAN : String
+          {static} + ROM_UNKNOWN : String
+          {static} + ROM_VIVO : String
+          {static} + ROM_ZTE : String
+          {static} - KEY_MIUI_VERSION_CODE : String
+          {static} - SYSTEM_VERSION_EMUI : String
+          {static} - SYSTEM_VERSION_FLYME : String
+          {static} - SYSTEM_VERSION_LENOVO : String
+          {static} - SYSTEM_VERSION_LETV : String
+          {static} - SYSTEM_VERSION_MIUI : String
+          {static} - SYSTEM_VERSION_OPPO : String
+          {static} - SYSTEM_VERSION_SMARTISAN : String
+          {static} - SYSTEM_VERSION_VIVO : String
+          {static} + getDeviceManufacture()
+          {static} + getLightStatusBarAvailableRomType()
+          {static} + getRomName()
+          {static} + is360Rom()
+          {static} + isCoolPadRom()
+          {static} + isDomesticSpecialRom()
+          {static} + isHuaweiRom()
+          {static} + isLenovoRom()
+          {static} + isLetvRom()
+          {static} + isMeizuRom()
+          {static} + isMiuiRom()
+          {static} + isOppoRom()
+          {static} + isSmartisanRom()
+          {static} + isVivoRom()
+          {static} + isZTERom()
+          {static} ~ isMiUIV7OrAbove()
+          {static} - getSystemProperty()
+          {static} - isAndroidMOrAbove()
+          {static} - isFlymeV4OrAbove()
+          {static} - isMiUIV6OrAbove()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.RomUtils.AvailableRomType {
+          {static} + ANDROID_NATIVE : int
+          {static} + FLYME : int
+          {static} + MIUI : int
+          {static} + NA : int
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      interface com.hyphenate.easeui.utils.RomUtils.RomName {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.StatusBarCompat {
+          {static} - COLOR_DEFAULT : int
+          {static} - INVALID_VAL : int
+          {static} + compat()
+          {static} + compat()
+          {static} + getStatusBarHeight()
+          {static} + setFitSystemForTheme()
+          {static} + setFitSystemForTheme()
+          {static} + setLightStatusBar()
+          {static} + setMIUISetStatusBarLightMode()
+          {static} - setAndroidNativeLightStatusBar()
+          {static} - setFlymeLightStatusBar()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.SystemProperties {
+          {static} - getStringProperty : Method
+          {static} + get()
+          {static} + get()
+          {static} - defaultString()
+          {static} - getClass()
+          {static} - getMethod()
+          {static} - trim()
+          {static} - trimToEmpty()
+          {static} - trimToNull()
+      }
+    }
+  }
+  
+
+  com.hyphenate.easeui.utils.EaseCommonUtils +-down- com.hyphenate.easeui.utils.EaseCommonUtils.GetInitialLetter
+  com.hyphenate.easeui.utils.HanziToPinyin +-down- com.hyphenate.easeui.utils.HanziToPinyin.Token
+  com.hyphenate.easeui.utils.RomUtils +-down- com.hyphenate.easeui.utils.RomUtils.AvailableRomType
+  com.hyphenate.easeui.utils.RomUtils +-down- com.hyphenate.easeui.utils.RomUtils.RomName
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

@@ -1,0 +1,43 @@
+pluginManagement {
+    repositories {
+        //gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven { url 'https://maven.aliyun.com/repository/public/'}
+        maven { url 'https://maven.aliyun.com/repository/google/'}
+        maven { url 'https://maven.aliyun.com/repository/jcenter/'}
+        maven { url 'https://maven.aliyun.com/repository/centrel/'}
+        maven {
+            url "https://jitpack.io"
+        }
+
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://maven.aliyun.com/repository/public/'}
+        maven { url 'https://maven.aliyun.com/repository/google/'}
+        maven { url 'https://maven.aliyun.com/repository/jcenter/'}
+        maven { url 'https://maven.aliyun.com/repository/centrel/'}
+        maven {
+            url "https://jitpack.io"
+        }
+    }
+}
+rootProject.name = "SIT"
+include ':app'
+//// 引入内部组件通信模块 (必要模块)
+//project(':tuicore').projectDir = new File(settingsDir, '../TUIKit/TUICore/tuicore')
+//
+//// 引入聊天功能模块 (基础功能模块)
+//project(':tuichat').projectDir = new File(settingsDir, '../TUIKit/TUIChat/tuichat')
+//
+//// 引入关系链功能模块 (基础功能模块)
+//project(':tuicontact').projectDir = new File(settingsDir, '../TUIKit/TUIContact/tuicontact')
+//
+//// 引入会话功能模块 (基础功能模块)
+//project(':tuiconversation').projectDir = new File(settingsDir, '../TUIKit/TUIConversation/tuiconversation')

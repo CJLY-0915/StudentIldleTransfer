@@ -1,0 +1,247 @@
+@startuml
+
+title __FRAGMENT's Class Diagram__\n
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Fragment {
+        abstract class com.example.sit.UI.Fragment.BaseFragment {
+            - TAG : String
+            - mRootView : View
+            - viewCreated : boolean
+            + dispatchUserVisibleStatus()
+            {abstract} + getLayout()
+            {abstract} + initView()
+            + onCreateView()
+            + onDestroy()
+            + onDestroyView()
+            + onDetach()
+            + onPause()
+            + onResume()
+            + onStartLoad()
+            + onStopLoad()
+            + setUserVisibleHint()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Fragment {
+        class com.example.sit.UI.Fragment.FollowFragment {
+            {static} ~ goodsList : List<Goods>
+            ~ goods_id : List<Integer>
+            {static} ~ homeAdapter : HomeAdapter
+            ~ imgs : List<String>
+            {static} ~ photoList : List<List<GoodsPhoto>>
+            ~ prices : List<String>
+            ~ size : int
+            ~ titles : List<String>
+            - space : int
+            + onCreateView()
+            + onViewCreated()
+            - initData()
+            - initRequest()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Fragment {
+        class com.example.sit.UI.Fragment.FollowFragment.space_item {
+            - space : int
+            + getItemOffsets()
+            + space_item()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Fragment {
+        class com.example.sit.UI.Fragment.IndexFragment {
+            ~ fragmentList : List<Fragment>
+            ~ tabLayout : TabLayout
+            ~ title : ArrayList<String>
+            ~ viewPager2 : ViewPager2
+            - btn1 : Button
+            - btn2 : Button
+            + onCreateView()
+            + onViewCreated()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Fragment {
+        class com.example.sit.UI.Fragment.MessageFragment {
+            {static} - TAG : String
+            + notifyAllChange()
+            + onCreateView()
+            + onItemClick()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Fragment {
+        class com.example.sit.UI.Fragment.PersonalCenterActivity {
+            + addressManageBtn : Button
+            + buyBtn : ImageView
+            + headerImage : ImageView
+            + myFollowBtn : Button
+            + nicknameText : TextView
+            + releaseBtn : ImageView
+            + sellBtn : ImageView
+            + settingBtn : Button
+            + onCreateView()
+            + onViewCreated()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Fragment {
+        class com.example.sit.UI.Fragment.PublishProductActivity {
+            {static} + FLAG_CODE : int
+            + images : File[]
+            + imgPreviewUrl : String[]
+            + maxSize : int
+            + productDes : String
+            + productPrice : int
+            + publishCurrentLocation : TextView
+            + publishImagePreview1 : ImageView
+            + publishImagePreview2 : ImageView
+            + publishImagePreview3 : ImageView
+            + publishProductDes : EditText
+            + publishProductPrice : EditText
+            + publishProductTextTips : TextView
+            + publishSubmitBtn : Button
+            ~ context : Context
+            ~ publishProductMessage : HashMap<String, Object>
+            {static} - TAG : String
+            + onActivityResult()
+            + onCreateView()
+            + onViewCreated()
+            - initRequest()
+            - urlToFile()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Fragment {
+        class com.example.sit.UI.Fragment.RecommendFragment {
+            ~ TAG : String
+            {static} ~ goodsList : List<Goods>
+            ~ goods_id : List<Integer>
+            {static} ~ homeAdapter : HomeAdapter
+            ~ imgs : List<String>
+            {static} ~ photoList : List<List<GoodsPhoto>>
+            ~ prices : List<String>
+            ~ recyclerView : RecyclerView
+            ~ size : int
+            ~ titles : List<String>
+            - space : int
+            + onCreateView()
+            + onViewCreated()
+            - initData()
+            - initRequest()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Fragment {
+        class com.example.sit.UI.Fragment.RecommendFragment.space_item {
+            - space : int
+            + getItemOffsets()
+            + space_item()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Fragment {
+        class com.example.sit.UI.Fragment.UniversityFragment {
+            {static} ~ goodsList : List<Goods>
+            ~ goods_id : List<Integer>
+            {static} ~ homeAdapter : HomeAdapter
+            ~ imgs : List<String>
+            {static} ~ photoList : List<List<GoodsPhoto>>
+            ~ prices : List<String>
+            ~ titles : List<String>
+            - space : int
+            + onCreateView()
+            + onViewCreated()
+            - initData()
+            - initRequest()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Fragment {
+        class com.example.sit.UI.Fragment.UniversityFragment.space_item {
+            - space : int
+            + getItemOffsets()
+            + space_item()
+        }
+      }
+    }
+  }
+  
+
+  com.example.sit.UI.Fragment.BaseFragment -up-|> androidx.fragment.app.Fragment
+  com.example.sit.UI.Fragment.FollowFragment -up-|> androidx.fragment.app.Fragment
+  com.example.sit.UI.Fragment.FollowFragment +-down- com.example.sit.UI.Fragment.FollowFragment.space_item
+  com.example.sit.UI.Fragment.FollowFragment.space_item -up-|> androidx.recyclerview.widget.RecyclerView.ItemDecoration
+  com.example.sit.UI.Fragment.IndexFragment -up-|> androidx.fragment.app.Fragment
+  com.example.sit.UI.Fragment.MessageFragment -up-|> com.hyphenate.easeui.modules.conversation.EaseConversationListFragment
+  com.example.sit.UI.Fragment.PersonalCenterActivity -up-|> androidx.fragment.app.Fragment
+  com.example.sit.UI.Fragment.PersonalCenterActivity o-- com.example.sit.Entity.User : user
+  com.example.sit.UI.Fragment.PublishProductActivity -up-|> androidx.fragment.app.Fragment
+  com.example.sit.UI.Fragment.RecommendFragment -up-|> androidx.fragment.app.Fragment
+  com.example.sit.UI.Fragment.RecommendFragment +-down- com.example.sit.UI.Fragment.RecommendFragment.space_item
+  com.example.sit.UI.Fragment.RecommendFragment.space_item -up-|> androidx.recyclerview.widget.RecyclerView.ItemDecoration
+  com.example.sit.UI.Fragment.UniversityFragment -up-|> androidx.fragment.app.Fragment
+  com.example.sit.UI.Fragment.UniversityFragment +-down- com.example.sit.UI.Fragment.UniversityFragment.space_item
+  com.example.sit.UI.Fragment.UniversityFragment.space_item -up-|> androidx.recyclerview.widget.RecyclerView.ItemDecoration
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

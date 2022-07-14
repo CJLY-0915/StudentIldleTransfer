@@ -1,0 +1,183 @@
+@startuml
+
+title __PRESENTER's Class Diagram__\n
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace presenter {
+          abstract class com.hyphenate.easeui.modules.chat.presenter.EaseChatMessagePresenter {
+              + conversation : EMConversation
+              + mView : IChatMessageListView
+              + attachView()
+              + detachView()
+              {abstract} + joinChatRoom()
+              {abstract} + loadLocalMessages()
+              {abstract} + loadMoreLocalHistoryMessages()
+              {abstract} + loadMoreLocalMessages()
+              {abstract} + loadMoreServerMessages()
+              {abstract} + loadServerMessages()
+              + onDestroy()
+              {abstract} + refreshCurrentConversation()
+              {abstract} + refreshToLatest()
+              + setupWithConversation()
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace presenter {
+          class com.hyphenate.easeui.modules.chat.presenter.EaseChatMessagePresenterImpl {
+              + isMessageId()
+              + joinChatRoom()
+              + loadLocalMessages()
+              + loadMoreLocalHistoryMessages()
+              + loadMoreLocalMessages()
+              + loadMoreServerMessages()
+              + loadServerMessages()
+              + refreshCurrentConversation()
+              + refreshToLatest()
+              - checkMessageStatus()
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace presenter {
+          abstract class com.hyphenate.easeui.modules.chat.presenter.EaseHandleMessagePresenter {
+              # chatType : int
+              # conversation : EMConversation
+              # mView : IHandleMessageView
+              # toChatUsername : String
+              {abstract} + addMessageAttributes()
+              + attachView()
+              {abstract} + deleteMessage()
+              + detachView()
+              {abstract} + hideTranslate()
+              + isGroupChat()
+              + onDestroy()
+              {abstract} + recallMessage()
+              {abstract} + resendMessage()
+              {abstract} + sendAtMessage()
+              {abstract} + sendBigExpressionMessage()
+              {abstract} + sendCmdMessage()
+              {abstract} + sendFileMessage()
+              {abstract} + sendImageMessage()
+              {abstract} + sendImageMessage()
+              {abstract} + sendLocationMessage()
+              {abstract} + sendMessage()
+              {abstract} + sendTextMessage()
+              {abstract} + sendTextMessage()
+              {abstract} + sendVideoMessage()
+              {abstract} + sendVoiceMessage()
+              + setupWithToUser()
+              {abstract} + translateMessage()
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace presenter {
+          class com.hyphenate.easeui.modules.chat.presenter.EaseHandleMessagePresenterImpl {
+              {static} - TAG : String
+              + addMessageAttributes()
+              + deleteMessage()
+              + hideTranslate()
+              + recallMessage()
+              + resendMessage()
+              + sendAtMessage()
+              + sendBigExpressionMessage()
+              + sendCmdMessage()
+              + sendFileMessage()
+              + sendImageMessage()
+              + sendImageMessage()
+              + sendLocationMessage()
+              + sendMessage()
+              + sendTextMessage()
+              + sendTextMessage()
+              + sendVideoMessage()
+              + sendVoiceMessage()
+              + translateMessage()
+              - getThumbPath()
+              - handleImageHeifToJpeg()
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace presenter {
+          interface com.hyphenate.easeui.modules.chat.presenter.IChatMessageListView {
+              {abstract} + getCurrentConversation()
+              {abstract} + joinChatRoomFail()
+              {abstract} + joinChatRoomSuccess()
+              {abstract} + loadLocalMsgSuccess()
+              {abstract} + loadMoreLocalHistoryMsgSuccess()
+              {abstract} + loadMoreLocalMsgSuccess()
+              {abstract} + loadMoreServerMsgSuccess()
+              {abstract} + loadMsgFail()
+              {abstract} + loadNoLocalMsg()
+              {abstract} + loadNoMoreLocalHistoryMsg()
+              {abstract} + loadNoMoreLocalMsg()
+              {abstract} + loadServerMsgSuccess()
+              {abstract} + refreshCurrentConSuccess()
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace presenter {
+          interface com.hyphenate.easeui.modules.chat.presenter.IHandleMessageView {
+              {abstract} + addMsgAttrBeforeSend()
+              {abstract} + createThumbFileFail()
+              {abstract} + deleteLocalMessageSuccess()
+              {abstract} + onPresenterMessageError()
+              {abstract} + onPresenterMessageInProgress()
+              {abstract} + onPresenterMessageSuccess()
+              {abstract} + recallMessageFail()
+              {abstract} + recallMessageFinish()
+              {abstract} + sendMessageFail()
+              {abstract} + sendMessageFinish()
+              {abstract} + translateMessageFail()
+              {abstract} + translateMessageSuccess()
+          }
+        }
+      }
+    }
+  }
+  
+
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

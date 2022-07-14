@@ -1,0 +1,310 @@
+@startuml
+
+title __ADAPTER's Class Diagram__\n
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      abstract class com.hyphenate.easeui.adapter.EaseAdapterDelegate {
+          {static} + DEFAULT_TAG : String
+          + tags : List<String>
+          - tag : String
+          + EaseAdapterDelegate()
+          + EaseAdapterDelegate()
+          + getItemCount()
+          + getItemViewType()
+          + getTag()
+          + getTags()
+          + isForViewType()
+          + onAttachedToRecyclerView()
+          + onBindViewHolder()
+          + onBindViewHolder()
+          {abstract} + onCreateViewHolder()
+          + onDetachedFromRecyclerView()
+          + onFailedToRecycleView()
+          + onViewAttachedToWindow()
+          + onViewDetachedFromWindow()
+          + onViewRecycled()
+          + setTag()
+          # clone()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      class com.hyphenate.easeui.adapter.EaseAdapterDelegatesManager {
+          + fallbackDelegate : EaseAdapterDelegate<Object, ViewHolder>
+          - dataTypeWithTags : SparseArrayCompat<String>
+          - delegates : SparseArrayCompat<EaseAdapterDelegate<Object, ViewHolder>>
+          - hasConsistItemType : boolean
+          + EaseAdapterDelegatesManager()
+          + addDelegate()
+          + getAllDelegates()
+          + getDelegate()
+          + getDelegateViewType()
+          + getItemViewType()
+          + onAttachedToRecyclerView()
+          + onBindViewHolder()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+          + onDetachedFromRecyclerView()
+          + onFailedToRecycleView()
+          + onViewAttachedToWindow()
+          + onViewDetachedFromWindow()
+          + onViewRecycled()
+          - getParameterizedType()
+          - getTagByViewType()
+          - indexesOfValue()
+          - targetItem()
+          - targetTag()
+          - typeWithTag()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      abstract class com.hyphenate.easeui.adapter.EaseBaseAdapter {
+          {abstract} + getItem()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      abstract class com.hyphenate.easeui.adapter.EaseBaseChatExtendMenuAdapter {
+          + mData : List<T>
+          + getItemCount()
+          + onCreateViewHolder()
+          + setData()
+          {abstract} # easeCreateViewHolder()
+          {abstract} # getItemLayoutId()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      abstract class com.hyphenate.easeui.adapter.EaseBaseDelegate {
+          + onCreateViewHolder()
+          {abstract} # createViewHolder()
+          {abstract} # getLayoutId()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      abstract class com.hyphenate.easeui.adapter.EaseBaseDelegateAdapter {
+          {static} - TAG : String
+          - delegatesManager : EaseAdapterDelegatesManager
+          + EaseBaseDelegateAdapter()
+          + EaseBaseDelegateAdapter()
+          + addDelegate()
+          + addDelegate()
+          + getAdapterDelegate()
+          + getAllDelegate()
+          + getDelegateViewType()
+          + getItemViewType()
+          + getViewHolder()
+          + onAttachedToRecyclerView()
+          + onBindViewHolder()
+          + onBindViewHolder()
+          + onDetachedFromRecyclerView()
+          + onFailedToRecycleView()
+          + onViewAttachedToWindow()
+          + onViewDetachedFromWindow()
+          + onViewRecycled()
+          + setFallbackDelegate()
+          + setFallbackDelegate()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      abstract class com.hyphenate.easeui.adapter.EaseBaseMessageAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      abstract class com.hyphenate.easeui.adapter.EaseBaseRecyclerViewAdapter {
+          {static} + VIEW_TYPE_EMPTY : int
+          {static} + VIEW_TYPE_ITEM : int
+          + mContext : Context
+          + mData : List<T>
+          - emptyView : View
+          - emptyViewId : int
+          - hideEmptyView : boolean
+          - mOnItemClickListener : OnItemClickListener
+          - mOnItemLongClickListener : OnItemLongClickListener
+          + addData()
+          + addData()
+          + addData()
+          + addData()
+          + clearData()
+          + getData()
+          + getEmptyLayoutId()
+          + getItem()
+          + getItemCount()
+          + getItemId()
+          + getItemViewType()
+          {abstract} + getViewHolder()
+          + hideEmptyView()
+          + isEmptyViewType()
+          + isItemClickEnable()
+          + isItemLongClickEnable()
+          + itemClickAction()
+          + itemLongClickAction()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+          + setData()
+          + setEmptyView()
+          + setEmptyView()
+          + setOnItemClickListener()
+          + setOnItemLongClickListener()
+          - getEmptyView()
+          - getEmptyViewHolder()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      abstract class com.hyphenate.easeui.adapter.EaseBaseRecyclerViewAdapter.ViewHolder {
+          - adapter : EaseBaseAdapter
+          + ViewHolder()
+          + findViewById()
+          + getAdapter()
+          {abstract} + initView()
+          {abstract} + setData()
+          + setDataList()
+          - setAdapter()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      class com.hyphenate.easeui.adapter.EaseChatExtendMenuAdapter {
+          - itemListener : OnItemClickListener
+          + onBindViewHolder()
+          + setOnItemClickListener()
+          # easeCreateViewHolder()
+          # getItemLayoutId()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      class com.hyphenate.easeui.adapter.EaseChatExtendMenuAdapter.ViewHolder {
+          - imageView : ImageView
+          - textView : TextView
+          + ViewHolder()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      class com.hyphenate.easeui.adapter.EaseChatExtendMenuIndicatorAdapter {
+          - page_count : int
+          - selectedPosition : int
+          + getItemCount()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+          + setPageCount()
+          + setSelectedPosition()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      class com.hyphenate.easeui.adapter.EaseChatExtendMenuIndicatorAdapter.ViewHolder {
+          - indicator : CheckBox
+          + ViewHolder()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      class com.hyphenate.easeui.adapter.EaseConversationListAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      class com.hyphenate.easeui.adapter.EaseMessageAdapter {
+          + itemClickListener : MessageListItemClickListener
+          + EaseMessageAdapter()
+          + addDelegate()
+          + createDefaultItemStyle()
+          + getEmptyLayoutId()
+          + getViewHolder()
+          + setFallbackDelegate()
+          + setListItemClickListener()
+          - getItemMessage()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      class com.hyphenate.easeui.adapter.EmojiconGridAdapter {
+          - emojiconType : Type
+          + EmojiconGridAdapter()
+          + getView()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      class com.hyphenate.easeui.adapter.EmojiconPagerAdapter {
+          - views : List<View>
+          + EmojiconPagerAdapter()
+          + destroyItem()
+          + getCount()
+          + instantiateItem()
+          + isViewFromObject()
+      }
+    }
+  }
+  
+
+  com.hyphenate.easeui.adapter.EaseAdapterDelegate .up.|> Cloneable
+  com.hyphenate.easeui.adapter.EaseBaseRecyclerViewAdapter +-down- com.hyphenate.easeui.adapter.EaseBaseRecyclerViewAdapter.ViewHolder
+  com.hyphenate.easeui.adapter.EaseChatExtendMenuAdapter +-down- com.hyphenate.easeui.adapter.EaseChatExtendMenuAdapter.ViewHolder
+  com.hyphenate.easeui.adapter.EaseChatExtendMenuIndicatorAdapter +-down- com.hyphenate.easeui.adapter.EaseChatExtendMenuIndicatorAdapter.ViewHolder
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

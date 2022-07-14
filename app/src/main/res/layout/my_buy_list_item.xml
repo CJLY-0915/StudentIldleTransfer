@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@drawable/list_item"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/buy_productImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginVertical="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/buy_productDes"
+            android:layout_width="293dp"
+            android:layout_height="37dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="140dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/buy_productPriceTip"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="@string/buy_price_tips"
+                android:textSize="19sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textColor="@color/deep_red"
+                android:text="@string/money_icon"
+                android:textSize="19sp"/>
+            <TextView
+                android:id="@+id/buy_productPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textSize="19sp"
+                android:textColor="@color/deep_red" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

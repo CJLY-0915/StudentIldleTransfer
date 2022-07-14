@@ -1,0 +1,290 @@
+@startuml
+
+title __MANAGER's Class Diagram__\n
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.BackgroundThreadFactory {
+          - mThreadPriority : int
+          + BackgroundThreadFactory()
+          + newThread()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EaseAtMessageHelper {
+          - atMeGroupList : Set<String>
+          {static} - instance : EaseAtMessageHelper
+          - toAtUserList : List<String>
+          + addAtUser()
+          + atListToJsonArray()
+          + cleanToAtUserList()
+          + containsAtAll()
+          + containsAtUsername()
+          {static} + get()
+          + getAtMeGroups()
+          + getAtMessageUsernames()
+          + hasAtMeMsg()
+          + isAtMeMsg()
+          + parseMessages()
+          + removeAtMeGroup()
+          - EaseAtMessageHelper()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EaseChatPresenter {
+          + context : Context
+          {static} - TAG : String
+          + EaseChatPresenter()
+          + attachApp()
+          + getNotifier()
+          + onCmdMessageReceived()
+          + onGroupMessageRead()
+          + onMessageChanged()
+          + onMessageDelivered()
+          + onMessageRead()
+          + onMessageRecalled()
+          + onMessageReceived()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EaseConfigsManager {
+          - context : Context
+          + EaseConfigsManager()
+          + enableSendChannelAck()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EaseDingMessageHelper {
+          {static} ~ CACHE_SIZE_CONVERSATION : int
+          {static} ~ CACHE_SIZE_MESSAGE : int
+          {static} ~ KEY_CONVERSATION_ID : String
+          {static} ~ KEY_DING : String
+          {static} ~ KEY_DING_ACK : String
+          {static} - NAME_PREFS : String
+          {static} - TAG : String
+          - dataCache : LruCache<String, LruCache<String, List<String>>>
+          - dataPrefs : SharedPreferences
+          {static} - instance : EaseDingMessageHelper
+          - listenerMap : Map<String, WeakReference<IAckUserUpdateListener>>
+          - prefsEditor : Editor
+          + createDingMessage()
+          + delete()
+          + delete()
+          + fetchGroupReadAck()
+          {static} + get()
+          + handleGroupReadAck()
+          + isDingMessage()
+          + sendAckMessage()
+          + setUserUpdateListener()
+          ~ EaseDingMessageHelper()
+          ~ generateKey()
+          ~ getDataCache()
+          ~ getDataPrefs()
+          ~ getListenerMap()
+          - createCache()
+          - validateMessage()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      interface com.hyphenate.easeui.manager.EaseDingMessageHelper.IAckUserUpdateListener {
+          {abstract} + onUpdate()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EaseMessageTypeSetManager {
+          - defaultDelegate : EaseAdapterDelegate<?, ?>
+          - defaultDelegateCls : Class<? extends EaseAdapterDelegate<?, ?>>
+          - delegateList : List<Class<? extends EaseAdapterDelegate<?, ?>>>
+          - delegates : Set<Class<? extends EaseAdapterDelegate<?, ?>>>
+          - hasConsistItemType : boolean
+          {static} - mInstance : EaseMessageTypeSetManager
+          + addMessageType()
+          {static} + getInstance()
+          + hasConsistItemType()
+          + registerMessageType()
+          + release()
+          + setConsistItemType()
+          + setDefaultMessageType()
+          - EaseMessageTypeSetManager()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EasePreferenceManager {
+          {static} - KEY_AT_GROUPS : String
+          {static} - SHARED_KEY_SETTING_MERGE_STREAM : String
+          {static} - SHARED_KEY_SETTING_RECORD_ON_SERVER : String
+          - editor : Editor
+          {static} - instance : EasePreferenceManager
+          - mSharedPreferences : SharedPreferences
+          + getAtMeGroups()
+          {static} + getInstance()
+          + getString()
+          + getUnSendMsgInfo()
+          + isMergeStream()
+          + isRecordOnServer()
+          + putString()
+          + saveUnSendMsgInfo()
+          + setAtMeGroups()
+          + setMergeStream()
+          + setRecordOnServer()
+          - EasePreferenceManager()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EaseSystemMsgManager {
+          {static} - instance : EaseSystemMsgManager
+          + createMessage()
+          + createMsgExt()
+          + getAllMessages()
+          + getConversation()
+          + getConversation()
+          {static} + getInstance()
+          + getLastMessageByConversation()
+          + getMessageContent()
+          + isSystemConversation()
+          + isSystemMessage()
+          + markAllMessagesAsRead()
+          + removeMessage()
+          + updateMessage()
+          - EaseSystemMsgManager()
+          - putObject()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EaseThreadManager {
+          {static} - instance : EaseThreadManager
+          - mIOThreadExecutor : Executor
+          - mMainThreadHandler : Handler
+          {static} + getInstance()
+          + isMainThread()
+          + runOnIOThread()
+          + runOnMainThread()
+          - EaseThreadManager()
+          - init()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EaseVoiceRecorder {
+          {static} ~ EXTENSION : String
+          {static} ~ PREFIX : String
+          ~ recorder : MediaRecorder
+          - file : File
+          - handler : Handler
+          - isRecording : boolean
+          - startTime : long
+          - voiceFileName : String
+          - voiceFilePath : String
+          + EaseVoiceRecorder()
+          + discardRecording()
+          + getVoiceFileName()
+          + getVoiceFilePath()
+          + isRecording()
+          + startRecording()
+          + stopRecoding()
+          # finalize()
+          - getVoiceFileName()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.PhoneStateManager {
+          {static} - INSTANCE : PhoneStateManager
+          {static} - TAG : String
+          - phoneStateListener : PhoneStateListener
+          - stateCallbacks : List<PhoneStateCallback>
+          - telephonyManager : TelephonyManager
+          + addStateCallback()
+          {static} + get()
+          + removeStateCallback()
+          # finalize()
+          - PhoneStateManager()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      interface com.hyphenate.easeui.manager.PhoneStateManager.PhoneStateCallback {
+          {abstract} + onCallStateChanged()
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.SidebarPresenter {
+          - mAdapter : Adapter
+          - mFloatingHeader : TextView
+          - mRecyclerView : RecyclerView
+          + onActionDown()
+          + onActionMove()
+          + onActionUp()
+          + setupWithRecyclerView()
+          - hideFloatingHeader()
+          - moveToRecyclerItem()
+          - showFloatingHeader()
+      }
+    }
+  }
+  
+
+  com.hyphenate.easeui.manager.BackgroundThreadFactory .up.|> ThreadFactory
+  com.hyphenate.easeui.manager.EaseChatPresenter .up.|> EMMessageListener
+  com.hyphenate.easeui.manager.EaseDingMessageHelper +-down- com.hyphenate.easeui.manager.EaseDingMessageHelper.IAckUserUpdateListener
+  com.hyphenate.easeui.manager.PhoneStateManager +-down- com.hyphenate.easeui.manager.PhoneStateManager.PhoneStateCallback
+  com.hyphenate.easeui.manager.SidebarPresenter .up.|> EaseSidebar.OnTouchEventListener
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

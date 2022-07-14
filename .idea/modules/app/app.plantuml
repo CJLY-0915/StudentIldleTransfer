@@ -1,0 +1,734 @@
+@startuml
+
+title __SIT.APP's Class Diagram__\n
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Adapter {
+        class com.example.sit.Adapter.BuyListBaseAdapter {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Adapter {
+        class com.example.sit.Adapter.BuyListHolder {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Adapter {
+        class com.example.sit.Adapter.DetailAdapter {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Adapter {
+        class com.example.sit.Adapter.DetailInfoAdapter {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Adapter {
+        class com.example.sit.Adapter.FollowListBaseAdapter {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Adapter {
+        class com.example.sit.Adapter.FollowListHolder {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Adapter {
+        class com.example.sit.Adapter.HomeAdapter {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Adapter {
+        class com.example.sit.Adapter.IndexAdapter {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Adapter {
+        class com.example.sit.Adapter.ListViewBaseAdapter {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Adapter {
+        class com.example.sit.Adapter.MainAdapter {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Adapter {
+        class com.example.sit.Adapter.ReleaseListBaseAdapter {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Adapter {
+        class com.example.sit.Adapter.ReleaseListHolder {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Adapter {
+        class com.example.sit.Adapter.SellListBaseAdapter {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Adapter {
+        class com.example.sit.Adapter.SellListHolder {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Adapter {
+        class com.example.sit.Adapter.TextViewHolder {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      class com.example.sit.BuildConfig {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      class com.example.sit.Const {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Dialogs {
+        class com.example.sit.Dialogs.AddAddressPopDialog {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Dialogs {
+        class com.example.sit.Dialogs.EditReleaseProductDialog {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Dialogs {
+        class com.example.sit.Dialogs.ImagePickDialog {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Dialogs {
+        class com.example.sit.Dialogs.RegardingDialog {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Entity {
+        class com.example.sit.Entity.Address {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Entity {
+        class com.example.sit.Entity.Goods {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Entity {
+        class com.example.sit.Entity.GoodsPhoto {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Entity {
+        class com.example.sit.Entity.User {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Http {
+        class com.example.sit.Http.Http {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      class com.example.sit.SITApplication {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Service {
+        class com.example.sit.Service.Api {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Activity {
+        class com.example.sit.UI.Activity.AddressManageActivity {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Activity {
+        class com.example.sit.UI.Activity.BuyActivity {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Activity {
+        class com.example.sit.UI.Activity.ChatActivity {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Activity {
+        class com.example.sit.UI.Activity.ContentActivity {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Activity {
+        class com.example.sit.UI.Activity.CoverActivity {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Activity {
+        class com.example.sit.UI.Activity.DetailActivity {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Activity {
+        class com.example.sit.UI.Activity.EditPersonalMessageActivity {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Activity {
+        class com.example.sit.UI.Activity.FollowActivity {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Activity {
+        class com.example.sit.UI.Activity.LoginActivity {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Activity {
+        class com.example.sit.UI.Activity.MainActivity {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Activity {
+        class com.example.sit.UI.Activity.MyBuyActivity {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Activity {
+        class com.example.sit.UI.Activity.MyReleaseActivity {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Activity {
+        class com.example.sit.UI.Activity.MySellActivity {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Activity {
+        class com.example.sit.UI.Activity.RegistryActivity {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Activity {
+        class com.example.sit.UI.Activity.SearchActivity {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Fragment {
+        abstract class com.example.sit.UI.Fragment.BaseFragment {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Fragment {
+        class com.example.sit.UI.Fragment.FollowFragment {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Fragment {
+        class com.example.sit.UI.Fragment.IndexFragment {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Fragment {
+        class com.example.sit.UI.Fragment.MessageFragment {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Fragment {
+        class com.example.sit.UI.Fragment.PersonalCenterActivity {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Fragment {
+        class com.example.sit.UI.Fragment.PublishProductActivity {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Fragment {
+        class com.example.sit.UI.Fragment.RecommendFragment {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace UI.Fragment {
+        class com.example.sit.UI.Fragment.UniversityFragment {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.ActivityCollectorUtil {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.AddressManageDataUtil {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.BarStatusUtil {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.BitmapUtil {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.DrawCircleImageViewUtil {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.EditMessageUtil {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.GetCharCombineUtil {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.GlobalExitUtil {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.InitDataUtil {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.JsonUtil {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.LoginUtil {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.NotifyUtil {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.RegistryUtil {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.SPUtil {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace Utils {
+        class com.example.sit.Utils.SaveUrlToFileUtil {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.example.sit {
+      namespace views {
+        class com.example.sit.views.RoundRectImageView {
+        }
+      }
+    }
+  }
+  
+
+  com.example.sit.Adapter.BuyListBaseAdapter -up-|> android.widget.BaseAdapter
+  com.example.sit.Adapter.DetailAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.sit.Adapter.FollowListBaseAdapter -up-|> android.widget.BaseAdapter
+  com.example.sit.Adapter.HomeAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.sit.Adapter.IndexAdapter -up-|> androidx.viewpager2.adapter.FragmentStateAdapter
+  com.example.sit.Adapter.ListViewBaseAdapter -up-|> android.widget.BaseAdapter
+  com.example.sit.Adapter.ListViewBaseAdapter o-- com.example.sit.Adapter.ListViewBaseAdapter.ItemOnClickListener : mItemClickListener
+  com.example.sit.Adapter.ListViewBaseAdapter o-- com.example.sit.Adapter.ListViewBaseAdapter.ItemOnDeleteClickListener : mItemDeleteClickListener
+  com.example.sit.Adapter.MainAdapter -up-|> androidx.viewpager2.adapter.FragmentStateAdapter
+  com.example.sit.Adapter.ReleaseListBaseAdapter -up-|> android.widget.BaseAdapter
+  com.example.sit.Adapter.SellListBaseAdapter -up-|> android.widget.BaseAdapter
+  com.example.sit.Dialogs.AddAddressPopDialog -up-|> android.widget.PopupWindow
+  com.example.sit.Dialogs.AddAddressPopDialog o-- com.example.sit.Dialogs.AddAddressPopDialog.ItemOnClickListener : mItemClickListener
+  com.example.sit.Dialogs.EditReleaseProductDialog -up-|> android.widget.PopupWindow
+  com.example.sit.Dialogs.EditReleaseProductDialog o-- com.example.sit.Dialogs.EditReleaseProductDialog.ImageClickListener : mImageClickListener
+  com.example.sit.Dialogs.EditReleaseProductDialog o-- com.example.sit.Dialogs.EditReleaseProductDialog.saveEditClickListener : mSaveClickListener
+  com.example.sit.Entity.User .up.|> java.io.Serializable
+  com.example.sit.SITApplication -up-|> android.app.Application
+  com.example.sit.UI.Activity.AddressManageActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.sit.UI.Activity.AddressManageActivity o-- com.example.sit.Adapter.ListViewBaseAdapter : adapter
+  com.example.sit.UI.Activity.BuyActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.sit.UI.Activity.BuyActivity o-- com.example.sit.Entity.Address : add
+  com.example.sit.UI.Activity.ChatActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.sit.UI.Activity.ContentActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.sit.UI.Activity.CoverActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.sit.UI.Activity.DetailActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.sit.UI.Activity.DetailActivity o-- com.example.sit.Adapter.DetailAdapter : detailAdapter
+  com.example.sit.UI.Activity.EditPersonalMessageActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.sit.UI.Activity.EditPersonalMessageActivity o-- com.example.sit.Entity.User : user
+  com.example.sit.UI.Activity.FollowActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.sit.UI.Activity.FollowActivity o-- com.example.sit.Adapter.FollowListBaseAdapter : adapter
+  com.example.sit.UI.Activity.LoginActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.sit.UI.Activity.MainActivity -up-|> androidx.fragment.app.FragmentActivity
+  com.example.sit.UI.Activity.MainActivity o-- com.example.sit.UI.Fragment.PublishProductActivity : ppa
+  com.example.sit.UI.Activity.MyBuyActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.sit.UI.Activity.MyBuyActivity o-- com.example.sit.Adapter.BuyListBaseAdapter : adapter
+  com.example.sit.UI.Activity.MyReleaseActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.sit.UI.Activity.MyReleaseActivity o-- com.example.sit.Adapter.ReleaseListBaseAdapter : adapter
+  com.example.sit.UI.Activity.MySellActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.sit.UI.Activity.MySellActivity o-- com.example.sit.UI.Activity.MySellActivity : activity
+  com.example.sit.UI.Activity.MySellActivity o-- com.example.sit.Adapter.SellListBaseAdapter : adapter
+  com.example.sit.UI.Activity.RegistryActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.sit.UI.Activity.SearchActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.sit.UI.Activity.SearchActivity o-- com.example.sit.Adapter.HomeAdapter : homeAdapter
+  com.example.sit.UI.Fragment.BaseFragment -up-|> androidx.fragment.app.Fragment
+  com.example.sit.UI.Fragment.FollowFragment -up-|> androidx.fragment.app.Fragment
+  com.example.sit.UI.Fragment.IndexFragment -up-|> androidx.fragment.app.Fragment
+  com.example.sit.UI.Fragment.MessageFragment -up-|> com.hyphenate.easeui.modules.conversation.EaseConversationListFragment
+  com.example.sit.UI.Fragment.PersonalCenterActivity -up-|> androidx.fragment.app.Fragment
+  com.example.sit.UI.Fragment.PersonalCenterActivity o-- com.example.sit.Entity.User : user
+  com.example.sit.UI.Fragment.PublishProductActivity -up-|> androidx.fragment.app.Fragment
+  com.example.sit.UI.Fragment.RecommendFragment -up-|> androidx.fragment.app.Fragment
+  com.example.sit.UI.Fragment.UniversityFragment -up-|> androidx.fragment.app.Fragment
+  com.example.sit.Utils.ActivityCollectorUtil -up-|> android.app.Application
+  com.example.sit.Utils.DrawCircleImageViewUtil -up-|> androidx.appcompat.widget.AppCompatImageView
+  com.example.sit.views.RoundRectImageView -up-|> android.widget.ImageView
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

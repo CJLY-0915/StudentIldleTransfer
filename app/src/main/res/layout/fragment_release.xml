@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".UI.Fragment.PublishProductActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_gravity="right"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        tools:ignore="RtlHardcoded">
+
+        <Button
+            android:id="@+id/publish_product_submit"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/publish_btn"
+            android:text="@string/publish_submit"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+            <EditText
+                android:id="@+id/publish_product_text"
+                android:layout_width="340dp"
+                android:layout_height="340dp"
+                android:background="@drawable/publish_text"
+                android:gravity="top"
+                android:hint="@string/publish_des_tips"
+                android:textColorHint="@color/silver"
+                android:maxLines="6"
+                android:padding="3dp"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.033"/>
+
+            <ImageView
+                android:id="@+id/publish_product_img1"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@drawable/publish_text"
+                android:scaleType="centerInside"
+                android:src="@drawable/publish_product_add_img"
+                app:layout_constraintBottom_toBottomOf="@+id/publish_product_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.132"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/publish_product_text"
+                app:layout_constraintVertical_bias="0.968"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/publish_product_img2"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@drawable/publish_text"
+                android:scaleType="centerInside"
+                android:src="@drawable/publish_product_add_img"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.108"
+                app:layout_constraintStart_toEndOf="@+id/publish_product_img1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.97"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/publish_product_img3"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@drawable/publish_text"
+                android:scaleType="centerInside"
+                android:src="@drawable/publish_product_add_img"
+                android:visibility="invisible"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintBottom_toBottomOf="@+id/publish_product_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.25"
+                app:layout_constraintStart_toEndOf="@+id/publish_product_img2"
+                app:layout_constraintTop_toTopOf="@+id/publish_product_text"
+                app:layout_constraintVertical_bias="0.97"/>
+
+            <TextView
+                android:id="@+id/publish_product_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/publish_add_img_tips"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintBottom_toBottomOf="@+id/publish_product_text"
+                app:layout_constraintStart_toEndOf="@+id/publish_product_img1"
+                app:layout_constraintTop_toTopOf="@+id/publish_product_text"
+                app:layout_constraintVertical_bias="0.976" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/location_image" />
+
+        <TextView
+            android:id="@+id/publish_product_current_location"
+            android:layout_width="320dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/publish_location_text"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/publish_price_tips"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/publish_product_price"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:background="@drawable/price_text"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+</LinearLayout>

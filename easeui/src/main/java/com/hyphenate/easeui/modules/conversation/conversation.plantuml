@@ -1,0 +1,145 @@
+@startuml
+
+title __CONVERSATION's Class Diagram__\n
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        class com.hyphenate.easeui.modules.conversation.EaseConversationListFragment {
+            + conversationListLayout : EaseConversationListLayout
+            + llRoot : LinearLayout
+            + srlRefresh : SwipeRefreshLayout
+            {static} - TAG : String
+            + finishRefresh()
+            + getLayoutId()
+            + initData()
+            + initListener()
+            + initView()
+            + loadDataFail()
+            + loadDataFinish()
+            + notifyAllChange()
+            + notifyItemChange()
+            + notifyItemRemove()
+            + onActivityCreated()
+            + onCreateView()
+            + onItemClick()
+            + onMenuItemClick()
+            + onMenuPreShow()
+            + onRefresh()
+            + onViewCreated()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        class com.hyphenate.easeui.modules.conversation.EaseConversationListLayout {
+            - adapter : ConcatAdapter
+            - conversationChangeListener : OnConversationChangeListener
+            - dismissListener : OnPopupMenuDismissListener
+            - itemListener : OnItemClickListener
+            - itemLongListener : OnItemLongClickListener
+            - listAdapter : EaseConversationListAdapter
+            - loadListener : OnConversationLoadListener
+            - menuHelper : EasePopupMenuHelper
+            - menuPreShowListener : OnPopupMenuPreShowListener
+            - popupMenuItemClickListener : OnPopupMenuItemClickListener
+            - presenter : EaseConversationPresenter
+            - rvConversationList : EaseRecyclerView
+            - setModel : EaseConversationSetStyle
+            - showDefaultMenu : boolean
+            - touchX : float
+            - touchY : float
+            + EaseConversationListLayout()
+            + EaseConversationListLayout()
+            + EaseConversationListLayout()
+            + addData()
+            + addFooterAdapter()
+            + addHeaderAdapter()
+            + addItemMenu()
+            + addRVItemDecoration()
+            + cancelConversationTop()
+            + clearMenu()
+            + context()
+            + deleteConversation()
+            + deleteItem()
+            + deleteItemFail()
+            + dispatchTouchEvent()
+            + findItemVisible()
+            + getItem()
+            + getListAdapter()
+            + getMenuHelper()
+            + getTouchX()
+            + getTouchY()
+            + hideUnreadDot()
+            + init()
+            + loadConversationListFail()
+            + loadConversationListNoData()
+            + loadConversationListSuccess()
+            + loadDefaultData()
+            + makeConversationTop()
+            + makeConversionRead()
+            + notifyDataSetChanged()
+            + refreshList()
+            + refreshList()
+            + removeAdapter()
+            + removeRVItemDecoration()
+            + setAvatarBorderColor()
+            + setAvatarBorderWidth()
+            + setAvatarRadius()
+            + setAvatarShapeType()
+            + setAvatarSize()
+            + setContentTextColor()
+            + setContentTextSize()
+            + setData()
+            + setDateTextColor()
+            + setDateTextSize()
+            + setItemBackGround()
+            + setItemHeight()
+            + setOnConversationChangeListener()
+            + setOnConversationLoadListener()
+            + setOnItemClickListener()
+            + setOnItemLongClickListener()
+            + setOnPopupMenuDismissListener()
+            + setOnPopupMenuItemClickListener()
+            + setOnPopupMenuPreShowListener()
+            + setPresenter()
+            + setTitleTextColor()
+            + setTitleTextSize()
+            + showItemDefaultMenu()
+            + showSystemMessage()
+            + showUnreadDotPosition()
+            + sortConversationListSuccess()
+            - initAttrs()
+            - initListener()
+            - initViews()
+            - showDefaultMenu()
+        }
+      }
+    }
+  }
+  
+
+  com.hyphenate.easeui.modules.conversation.EaseConversationListFragment .up.|> OnConversationChangeListener
+  com.hyphenate.easeui.modules.conversation.EaseConversationListFragment .up.|> OnConversationLoadListener
+  com.hyphenate.easeui.modules.conversation.EaseConversationListFragment .up.|> OnItemClickListener
+  com.hyphenate.easeui.modules.conversation.EaseConversationListFragment .up.|> OnPopupMenuItemClickListener
+  com.hyphenate.easeui.modules.conversation.EaseConversationListFragment .up.|> OnPopupMenuPreShowListener
+  com.hyphenate.easeui.modules.conversation.EaseConversationListFragment .up.|> SwipeRefreshLayout.OnRefreshListener
+  com.hyphenate.easeui.modules.conversation.EaseConversationListLayout .up.|> IConversationListLayout
+  com.hyphenate.easeui.modules.conversation.EaseConversationListLayout .up.|> IConversationStyle
+  com.hyphenate.easeui.modules.conversation.EaseConversationListLayout .up.|> IEaseConversationListView
+  com.hyphenate.easeui.modules.conversation.EaseConversationListLayout .up.|> IPopupMenu
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

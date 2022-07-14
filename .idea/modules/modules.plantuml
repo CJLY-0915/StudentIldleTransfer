@@ -1,0 +1,3754 @@
+@startuml
+
+title __SIT's Class Diagram__\n
+
+  namespace com.hyphenate.easeui {
+    class com.hyphenate.easeui.BuildConfig {
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    class com.hyphenate.easeui.EaseIM {
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    class com.hyphenate.easeui.EaseIM {
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      abstract class com.hyphenate.easeui.adapter.EaseAdapterDelegate {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      abstract class com.hyphenate.easeui.adapter.EaseAdapterDelegate {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      class com.hyphenate.easeui.adapter.EaseAdapterDelegatesManager {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      class com.hyphenate.easeui.adapter.EaseAdapterDelegatesManager {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      abstract class com.hyphenate.easeui.adapter.EaseBaseAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      abstract class com.hyphenate.easeui.adapter.EaseBaseAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      abstract class com.hyphenate.easeui.adapter.EaseBaseChatExtendMenuAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      abstract class com.hyphenate.easeui.adapter.EaseBaseChatExtendMenuAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      abstract class com.hyphenate.easeui.adapter.EaseBaseDelegate {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      abstract class com.hyphenate.easeui.adapter.EaseBaseDelegate {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      abstract class com.hyphenate.easeui.adapter.EaseBaseDelegateAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      abstract class com.hyphenate.easeui.adapter.EaseBaseDelegateAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      abstract class com.hyphenate.easeui.adapter.EaseBaseMessageAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      abstract class com.hyphenate.easeui.adapter.EaseBaseMessageAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      abstract class com.hyphenate.easeui.adapter.EaseBaseRecyclerViewAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      abstract class com.hyphenate.easeui.adapter.EaseBaseRecyclerViewAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      class com.hyphenate.easeui.adapter.EaseChatExtendMenuAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      class com.hyphenate.easeui.adapter.EaseChatExtendMenuAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      class com.hyphenate.easeui.adapter.EaseChatExtendMenuIndicatorAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      class com.hyphenate.easeui.adapter.EaseChatExtendMenuIndicatorAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      class com.hyphenate.easeui.adapter.EaseConversationListAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      class com.hyphenate.easeui.adapter.EaseConversationListAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      class com.hyphenate.easeui.adapter.EaseMessageAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      class com.hyphenate.easeui.adapter.EaseMessageAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      class com.hyphenate.easeui.adapter.EmojiconGridAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      class com.hyphenate.easeui.adapter.EmojiconGridAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      class com.hyphenate.easeui.adapter.EmojiconPagerAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace adapter {
+      class com.hyphenate.easeui.adapter.EmojiconPagerAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace constants {
+      interface com.hyphenate.easeui.constants.EaseConstant {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace constants {
+      interface com.hyphenate.easeui.constants.EaseConstant {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace delegate {
+      class com.hyphenate.easeui.delegate.ConversationDelegate {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace delegate {
+      class com.hyphenate.easeui.delegate.ConversationDelegate {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace delegate {
+      class com.hyphenate.easeui.delegate.EaseCustomAdapterDelegate {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace delegate {
+      class com.hyphenate.easeui.delegate.EaseCustomAdapterDelegate {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace delegate {
+      class com.hyphenate.easeui.delegate.EaseExpressionAdapterDelegate {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace delegate {
+      class com.hyphenate.easeui.delegate.EaseExpressionAdapterDelegate {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace delegate {
+      class com.hyphenate.easeui.delegate.EaseFileAdapterDelegate {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace delegate {
+      class com.hyphenate.easeui.delegate.EaseFileAdapterDelegate {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace delegate {
+      class com.hyphenate.easeui.delegate.EaseImageAdapterDelegate {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace delegate {
+      class com.hyphenate.easeui.delegate.EaseImageAdapterDelegate {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace delegate {
+      class com.hyphenate.easeui.delegate.EaseLocationAdapterDelegate {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace delegate {
+      class com.hyphenate.easeui.delegate.EaseLocationAdapterDelegate {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace delegate {
+      abstract class com.hyphenate.easeui.delegate.EaseMessageAdapterDelegate {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace delegate {
+      abstract class com.hyphenate.easeui.delegate.EaseMessageAdapterDelegate {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace delegate {
+      class com.hyphenate.easeui.delegate.EaseTextAdapterDelegate {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace delegate {
+      class com.hyphenate.easeui.delegate.EaseTextAdapterDelegate {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace delegate {
+      class com.hyphenate.easeui.delegate.EaseVideoAdapterDelegate {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace delegate {
+      class com.hyphenate.easeui.delegate.EaseVideoAdapterDelegate {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace delegate {
+      class com.hyphenate.easeui.delegate.EaseVoiceAdapterDelegate {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace delegate {
+      class com.hyphenate.easeui.delegate.EaseVoiceAdapterDelegate {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace domain {
+      class com.hyphenate.easeui.domain.EaseAvatarOptions {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace domain {
+      class com.hyphenate.easeui.domain.EaseAvatarOptions {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace domain {
+      class com.hyphenate.easeui.domain.EaseEmojicon {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace domain {
+      class com.hyphenate.easeui.domain.EaseEmojicon {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace domain {
+      class com.hyphenate.easeui.domain.EaseEmojiconGroupEntity {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace domain {
+      class com.hyphenate.easeui.domain.EaseEmojiconGroupEntity {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace domain {
+      class com.hyphenate.easeui.domain.EaseUser {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace domain {
+      class com.hyphenate.easeui.domain.EaseUser {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace interfaces {
+      abstract class com.hyphenate.easeui.interfaces.EaseChatRoomListener {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace interfaces {
+      abstract class com.hyphenate.easeui.interfaces.EaseChatRoomListener {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace interfaces {
+      abstract class com.hyphenate.easeui.interfaces.EaseGroupListener {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace interfaces {
+      abstract class com.hyphenate.easeui.interfaces.EaseGroupListener {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace interfaces {
+      abstract class com.hyphenate.easeui.interfaces.EaseMessageCallback {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace interfaces {
+      abstract class com.hyphenate.easeui.interfaces.EaseMessageCallback {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace interfaces {
+      interface com.hyphenate.easeui.interfaces.IChatAdapterProvider {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace interfaces {
+      interface com.hyphenate.easeui.interfaces.IChatAdapterProvider {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace interfaces {
+      interface com.hyphenate.easeui.interfaces.IViewHolderProvider {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace interfaces {
+      interface com.hyphenate.easeui.interfaces.IViewHolderProvider {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace interfaces {
+      interface com.hyphenate.easeui.interfaces.MessageListItemClickListener {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace interfaces {
+      interface com.hyphenate.easeui.interfaces.MessageListItemClickListener {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace interfaces {
+      interface com.hyphenate.easeui.interfaces.OnCallBack {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace interfaces {
+      interface com.hyphenate.easeui.interfaces.OnCallBack {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace interfaces {
+      abstract class com.hyphenate.easeui.interfaces.OnEaseCallBack {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace interfaces {
+      abstract class com.hyphenate.easeui.interfaces.OnEaseCallBack {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace interfaces {
+      interface com.hyphenate.easeui.interfaces.OnItemClickListener {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace interfaces {
+      interface com.hyphenate.easeui.interfaces.OnItemClickListener {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace interfaces {
+      interface com.hyphenate.easeui.interfaces.OnItemLongClickListener {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace interfaces {
+      interface com.hyphenate.easeui.interfaces.OnItemLongClickListener {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.BackgroundThreadFactory {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.BackgroundThreadFactory {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EaseAtMessageHelper {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EaseAtMessageHelper {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EaseChatPresenter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EaseChatPresenter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EaseConfigsManager {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EaseConfigsManager {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EaseDingMessageHelper {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EaseDingMessageHelper {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EaseMessageTypeSetManager {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EaseMessageTypeSetManager {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EasePreferenceManager {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EasePreferenceManager {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EaseSystemMsgManager {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EaseSystemMsgManager {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EaseThreadManager {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EaseThreadManager {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EaseVoiceRecorder {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.EaseVoiceRecorder {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.PhoneStateManager {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.PhoneStateManager {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.SidebarPresenter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace manager {
+      class com.hyphenate.easeui.manager.SidebarPresenter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace model {
+      class com.hyphenate.easeui.model.EaseDefaultEmojiconDatas {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace model {
+      class com.hyphenate.easeui.model.EaseDefaultEmojiconDatas {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace model {
+      class com.hyphenate.easeui.model.EaseEvent {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace model {
+      class com.hyphenate.easeui.model.EaseEvent {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace model {
+      class com.hyphenate.easeui.model.EaseNotifier {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace model {
+      class com.hyphenate.easeui.model.EaseNotifier {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace model {
+      class com.hyphenate.easeui.model.VideoEntity {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace model {
+      class com.hyphenate.easeui.model.VideoEntity {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace model {
+      namespace styles {
+        class com.hyphenate.easeui.model.styles.EaseMessageListItemStyle {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace model {
+      namespace styles {
+        class com.hyphenate.easeui.model.styles.EaseMessageListItemStyle {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      class com.hyphenate.easeui.modules.EaseBaseLayout {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      class com.hyphenate.easeui.modules.EaseBaseLayout {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      abstract class com.hyphenate.easeui.modules.EaseBasePresenter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      abstract class com.hyphenate.easeui.modules.EaseBasePresenter {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      class com.hyphenate.easeui.modules.EaseBaseSetStyle {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      class com.hyphenate.easeui.modules.EaseBaseSetStyle {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      interface com.hyphenate.easeui.modules.ILoadDataView {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      interface com.hyphenate.easeui.modules.ILoadDataView {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseChatExtendMenu {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseChatExtendMenu {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseChatFragment {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseChatFragment {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseChatInputMenu {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseChatInputMenu {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseChatLayout {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseChatLayout {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseChatPrimaryMenu {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseChatPrimaryMenu {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseEmojiconMenu {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseEmojiconMenu {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseInputEditText {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseInputEditText {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        enum EaseInputMenuStyle {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        enum EaseInputMenuStyle {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.ChatInputMenuListener {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.ChatInputMenuListener {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.EaseChatExtendMenuItemClickListener {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.EaseChatExtendMenuItemClickListener {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.EaseChatPrimaryMenuListener {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.EaseChatPrimaryMenuListener {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.EaseEmojiconMenuListener {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.EaseEmojiconMenuListener {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.IChatEmojiconMenu {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.IChatEmojiconMenu {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.IChatExtendMenu {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.IChatExtendMenu {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.IChatInputMenu {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.IChatInputMenu {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.IChatLayout {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.IChatLayout {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.IChatMessageItemSet {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.IChatMessageItemSet {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.IChatMessageListLayout {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.IChatMessageListLayout {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.IChatPrimaryMenu {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.IChatPrimaryMenu {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.IRecyclerViewHandle {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.IRecyclerViewHandle {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.OnAddMsgAttrsBeforeSendEvent {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.OnAddMsgAttrsBeforeSendEvent {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.OnChatLayoutListener {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.OnChatLayoutListener {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.OnChatRecordTouchListener {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.OnChatRecordTouchListener {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.OnMenuChangeListener {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.OnMenuChangeListener {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.OnRecallMessageResultListener {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.OnRecallMessageResultListener {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.OnTranslateMessageListener {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.chat.interfaces.OnTranslateMessageListener {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace model {
+          class com.hyphenate.easeui.modules.chat.model.EaseChatItemStyleHelper {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace model {
+          class com.hyphenate.easeui.modules.chat.model.EaseChatItemStyleHelper {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace model {
+          class com.hyphenate.easeui.modules.chat.model.EaseChatSetStyle {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace model {
+          class com.hyphenate.easeui.modules.chat.model.EaseChatSetStyle {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace presenter {
+          abstract class com.hyphenate.easeui.modules.chat.presenter.EaseChatMessagePresenter {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace presenter {
+          abstract class com.hyphenate.easeui.modules.chat.presenter.EaseChatMessagePresenter {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace presenter {
+          class com.hyphenate.easeui.modules.chat.presenter.EaseChatMessagePresenterImpl {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace presenter {
+          class com.hyphenate.easeui.modules.chat.presenter.EaseChatMessagePresenterImpl {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace presenter {
+          abstract class com.hyphenate.easeui.modules.chat.presenter.EaseHandleMessagePresenter {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace presenter {
+          abstract class com.hyphenate.easeui.modules.chat.presenter.EaseHandleMessagePresenter {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace presenter {
+          class com.hyphenate.easeui.modules.chat.presenter.EaseHandleMessagePresenterImpl {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace presenter {
+          class com.hyphenate.easeui.modules.chat.presenter.EaseHandleMessagePresenterImpl {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace presenter {
+          interface com.hyphenate.easeui.modules.chat.presenter.IChatMessageListView {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace presenter {
+          interface com.hyphenate.easeui.modules.chat.presenter.IChatMessageListView {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace presenter {
+          interface com.hyphenate.easeui.modules.chat.presenter.IHandleMessageView {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        namespace presenter {
+          interface com.hyphenate.easeui.modules.chat.presenter.IHandleMessageView {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        class com.hyphenate.easeui.modules.contact.EaseContactLayout {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        class com.hyphenate.easeui.modules.contact.EaseContactLayout {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        class com.hyphenate.easeui.modules.contact.EaseContactListFragment {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        class com.hyphenate.easeui.modules.contact.EaseContactListFragment {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        class com.hyphenate.easeui.modules.contact.EaseContactListLayout {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        class com.hyphenate.easeui.modules.contact.EaseContactListLayout {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        namespace adapter {
+          class com.hyphenate.easeui.modules.contact.adapter.EaseContactCustomAdapter {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        namespace adapter {
+          class com.hyphenate.easeui.modules.contact.adapter.EaseContactCustomAdapter {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        namespace adapter {
+          class com.hyphenate.easeui.modules.contact.adapter.EaseContactListAdapter {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        namespace adapter {
+          class com.hyphenate.easeui.modules.contact.adapter.EaseContactListAdapter {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.contact.interfaces.IContactCustomListLayout {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.contact.interfaces.IContactCustomListLayout {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.contact.interfaces.IContactLayout {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.contact.interfaces.IContactLayout {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.contact.interfaces.IContactListLayout {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.contact.interfaces.IContactListLayout {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.contact.interfaces.IContactListStyle {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.contact.interfaces.IContactListStyle {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.contact.interfaces.IContactTextStyle {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.contact.interfaces.IContactTextStyle {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.contact.interfaces.OnContactLoadListener {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.contact.interfaces.OnContactLoadListener {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        namespace model {
+          class com.hyphenate.easeui.modules.contact.model.EaseContactCustomBean {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        namespace model {
+          class com.hyphenate.easeui.modules.contact.model.EaseContactCustomBean {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        namespace model {
+          class com.hyphenate.easeui.modules.contact.model.EaseContactSetStyle {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        namespace model {
+          class com.hyphenate.easeui.modules.contact.model.EaseContactSetStyle {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        namespace presenter {
+          abstract class com.hyphenate.easeui.modules.contact.presenter.EaseContactPresenter {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        namespace presenter {
+          abstract class com.hyphenate.easeui.modules.contact.presenter.EaseContactPresenter {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        namespace presenter {
+          class com.hyphenate.easeui.modules.contact.presenter.EaseContactPresenterImpl {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        namespace presenter {
+          class com.hyphenate.easeui.modules.contact.presenter.EaseContactPresenterImpl {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        namespace presenter {
+          interface com.hyphenate.easeui.modules.contact.presenter.IEaseContactListView {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace contact {
+        namespace presenter {
+          interface com.hyphenate.easeui.modules.contact.presenter.IEaseContactListView {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        class com.hyphenate.easeui.modules.conversation.EaseConversationListFragment {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        class com.hyphenate.easeui.modules.conversation.EaseConversationListFragment {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        class com.hyphenate.easeui.modules.conversation.EaseConversationListLayout {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        class com.hyphenate.easeui.modules.conversation.EaseConversationListLayout {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace adapter {
+          class com.hyphenate.easeui.modules.conversation.adapter.EaseConversationListAdapter {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace adapter {
+          class com.hyphenate.easeui.modules.conversation.adapter.EaseConversationListAdapter {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace delegate {
+          abstract class com.hyphenate.easeui.modules.conversation.delegate.EaseBaseConversationDelegate {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace delegate {
+          abstract class com.hyphenate.easeui.modules.conversation.delegate.EaseBaseConversationDelegate {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace delegate {
+          class com.hyphenate.easeui.modules.conversation.delegate.EaseConversationDelegate {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace delegate {
+          class com.hyphenate.easeui.modules.conversation.delegate.EaseConversationDelegate {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace delegate {
+          abstract class com.hyphenate.easeui.modules.conversation.delegate.EaseDefaultConversationDelegate {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace delegate {
+          abstract class com.hyphenate.easeui.modules.conversation.delegate.EaseDefaultConversationDelegate {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace delegate {
+          class com.hyphenate.easeui.modules.conversation.delegate.EaseSystemMsgDelegate {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace delegate {
+          class com.hyphenate.easeui.modules.conversation.delegate.EaseSystemMsgDelegate {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.conversation.interfaces.IConversationListLayout {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.conversation.interfaces.IConversationListLayout {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.conversation.interfaces.IConversationStyle {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.conversation.interfaces.IConversationStyle {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.conversation.interfaces.IConversationTextStyle {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.conversation.interfaces.IConversationTextStyle {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.conversation.interfaces.OnConversationChangeListener {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.conversation.interfaces.OnConversationChangeListener {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.conversation.interfaces.OnConversationLoadListener {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace interfaces {
+          interface com.hyphenate.easeui.modules.conversation.interfaces.OnConversationLoadListener {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace model {
+          class com.hyphenate.easeui.modules.conversation.model.EaseConversationInfo {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace model {
+          class com.hyphenate.easeui.modules.conversation.model.EaseConversationInfo {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace model {
+          class com.hyphenate.easeui.modules.conversation.model.EaseConversationSetStyle {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace model {
+          class com.hyphenate.easeui.modules.conversation.model.EaseConversationSetStyle {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace presenter {
+          abstract class com.hyphenate.easeui.modules.conversation.presenter.EaseConversationPresenter {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace presenter {
+          abstract class com.hyphenate.easeui.modules.conversation.presenter.EaseConversationPresenter {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace presenter {
+          class com.hyphenate.easeui.modules.conversation.presenter.EaseConversationPresenterImpl {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace presenter {
+          class com.hyphenate.easeui.modules.conversation.presenter.EaseConversationPresenterImpl {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace presenter {
+          interface com.hyphenate.easeui.modules.conversation.presenter.IEaseConversationListView {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace conversation {
+        namespace presenter {
+          interface com.hyphenate.easeui.modules.conversation.presenter.IEaseConversationListView {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace interfaces {
+        interface com.hyphenate.easeui.modules.interfaces.IAvatarSet {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace interfaces {
+        interface com.hyphenate.easeui.modules.interfaces.IAvatarSet {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace interfaces {
+        interface com.hyphenate.easeui.modules.interfaces.IPopupMenu {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace interfaces {
+        interface com.hyphenate.easeui.modules.interfaces.IPopupMenu {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace interfaces {
+        interface com.hyphenate.easeui.modules.interfaces.IPopupWindow {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace interfaces {
+        interface com.hyphenate.easeui.modules.interfaces.IPopupWindow {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace interfaces {
+        interface com.hyphenate.easeui.modules.interfaces.IRecyclerView {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace interfaces {
+        interface com.hyphenate.easeui.modules.interfaces.IRecyclerView {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace menu {
+        class com.hyphenate.easeui.modules.menu.EasePopupMenuHelper {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace menu {
+        class com.hyphenate.easeui.modules.menu.EasePopupMenuHelper {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace menu {
+        class com.hyphenate.easeui.modules.menu.EasePopupWindow {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace menu {
+        class com.hyphenate.easeui.modules.menu.EasePopupWindow {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace menu {
+        class com.hyphenate.easeui.modules.menu.EasePopupWindowHelper {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace menu {
+        class com.hyphenate.easeui.modules.menu.EasePopupWindowHelper {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace menu {
+        class com.hyphenate.easeui.modules.menu.MenuItemBean {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace menu {
+        class com.hyphenate.easeui.modules.menu.MenuItemBean {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace menu {
+        interface com.hyphenate.easeui.modules.menu.OnPopupMenuDismissListener {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace menu {
+        interface com.hyphenate.easeui.modules.menu.OnPopupMenuDismissListener {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace menu {
+        interface com.hyphenate.easeui.modules.menu.OnPopupMenuItemClickListener {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace menu {
+        interface com.hyphenate.easeui.modules.menu.OnPopupMenuItemClickListener {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace menu {
+        interface com.hyphenate.easeui.modules.menu.OnPopupMenuPreShowListener {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace menu {
+        interface com.hyphenate.easeui.modules.menu.OnPopupMenuPreShowListener {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace provider {
+      interface com.hyphenate.easeui.provider.EaseConversationInfoProvider {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace provider {
+      interface com.hyphenate.easeui.provider.EaseConversationInfoProvider {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace provider {
+      interface com.hyphenate.easeui.provider.EaseEmojiconInfoProvider {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace provider {
+      interface com.hyphenate.easeui.provider.EaseEmojiconInfoProvider {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace provider {
+      interface com.hyphenate.easeui.provider.EaseSettingsProvider {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace provider {
+      interface com.hyphenate.easeui.provider.EaseSettingsProvider {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace provider {
+      interface com.hyphenate.easeui.provider.EaseUserProfileProvider {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace provider {
+      interface com.hyphenate.easeui.provider.EaseUserProfileProvider {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace ui {
+      class com.hyphenate.easeui.ui.EaseBaiduMapActivity {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace ui {
+      class com.hyphenate.easeui.ui.EaseBaiduMapActivity {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace ui {
+      class com.hyphenate.easeui.ui.EaseDingAckUserListActivity {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace ui {
+      class com.hyphenate.easeui.ui.EaseShowBigImageActivity {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace ui {
+      class com.hyphenate.easeui.ui.EaseShowNormalFileActivity {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace ui {
+      class com.hyphenate.easeui.ui.EaseShowVideoActivity {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace ui {
+      namespace base {
+        class com.hyphenate.easeui.ui.base.EaseBaseActivity {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace ui {
+      namespace base {
+        class com.hyphenate.easeui.ui.base.EaseBaseActivity {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace ui {
+      namespace base {
+        class com.hyphenate.easeui.ui.base.EaseBaseFragment {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace ui {
+      namespace base {
+        class com.hyphenate.easeui.ui.base.EaseBaseFragment {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.EaseCommonUtils {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.EaseCompat {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.EaseDateUtils {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.EaseEditTextUtils {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.EaseFileUtils {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.EaseImageCache {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.EaseImageUtils {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.EaseLoadLocalBigImgTask {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.EaseSmileUtils {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.EaseUserUtils {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.EaseVoiceLengthUtils {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.HanziToPinyin {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.RomUtils {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.StatusBarCompat {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace utils {
+      class com.hyphenate.easeui.utils.SystemProperties {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace viewholder {
+      class com.hyphenate.easeui.viewholder.EaseChatRowViewHolder {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace viewholder {
+      class com.hyphenate.easeui.viewholder.EaseChatRowViewHolder {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace viewholder {
+      class com.hyphenate.easeui.viewholder.EaseCustomViewHolder {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace viewholder {
+      class com.hyphenate.easeui.viewholder.EaseExpressionViewHolder {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace viewholder {
+      class com.hyphenate.easeui.viewholder.EaseFileViewHolder {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace viewholder {
+      class com.hyphenate.easeui.viewholder.EaseImageViewHolder {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace viewholder {
+      class com.hyphenate.easeui.viewholder.EaseLocationViewHolder {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace viewholder {
+      class com.hyphenate.easeui.viewholder.EaseTextViewHolder {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace viewholder {
+      class com.hyphenate.easeui.viewholder.EaseVideoViewHolder {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace viewholder {
+      class com.hyphenate.easeui.viewholder.EaseVoiceViewHolder {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.CanvasLegacy {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EImageView {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseAlertDialog {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseImageView {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseImageView {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseRecyclerView {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseRecyclerView {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseRoundImageView {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseSearchEditText {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseSearchTextView {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseSidebar {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseSidebar {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseTitleBar {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseVoiceRecorderView {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.EaseVoiceRecorderView {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      class com.hyphenate.easeui.widget.MyChronometer {
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatextend {
+        class com.hyphenate.easeui.widget.chatextend.HorizontalPageLayoutManager {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatextend {
+        interface com.hyphenate.easeui.widget.chatextend.PageDecorationLastJudge {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatextend {
+        class com.hyphenate.easeui.widget.chatextend.PagingItemDecoration {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatextend {
+        class com.hyphenate.easeui.widget.chatextend.PagingScrollHelper {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatextend {
+        class com.hyphenate.easeui.widget.chatextend.PagingScrollHelper {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatrow {
+        class com.hyphenate.easeui.widget.chatrow.AutolinkSpan {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatrow {
+        abstract class com.hyphenate.easeui.widget.chatrow.EaseChatRow {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatrow {
+        abstract class com.hyphenate.easeui.widget.chatrow.EaseChatRow {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatrow {
+        class com.hyphenate.easeui.widget.chatrow.EaseChatRowBigExpression {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatrow {
+        class com.hyphenate.easeui.widget.chatrow.EaseChatRowCustom {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatrow {
+        class com.hyphenate.easeui.widget.chatrow.EaseChatRowFile {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatrow {
+        class com.hyphenate.easeui.widget.chatrow.EaseChatRowImage {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatrow {
+        class com.hyphenate.easeui.widget.chatrow.EaseChatRowLocation {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatrow {
+        class com.hyphenate.easeui.widget.chatrow.EaseChatRowText {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatrow {
+        class com.hyphenate.easeui.widget.chatrow.EaseChatRowVideo {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatrow {
+        class com.hyphenate.easeui.widget.chatrow.EaseChatRowVoice {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatrow {
+        class com.hyphenate.easeui.widget.chatrow.EaseChatRowVoicePlayer {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace emojicon {
+        class com.hyphenate.easeui.widget.emojicon.EaseEmojiconIndicatorView {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace emojicon {
+        class com.hyphenate.easeui.widget.emojicon.EaseEmojiconIndicatorView {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace emojicon {
+        class com.hyphenate.easeui.widget.emojicon.EaseEmojiconPagerView {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace emojicon {
+        class com.hyphenate.easeui.widget.emojicon.EaseEmojiconPagerView {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace emojicon {
+        class com.hyphenate.easeui.widget.emojicon.EaseEmojiconScrollTabBar {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace emojicon {
+        class com.hyphenate.easeui.widget.emojicon.EaseEmojiconScrollTabBar {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace photoview {
+        class com.hyphenate.easeui.widget.photoview.Compat {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace photoview {
+        class com.hyphenate.easeui.widget.photoview.EasePhotoView {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace photoview {
+        interface com.hyphenate.easeui.widget.photoview.IPhotoView {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace photoview {
+        class com.hyphenate.easeui.widget.photoview.PhotoViewAttacher {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace photoview {
+        class com.hyphenate.easeui.widget.photoview.SDK16 {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace photoview {
+        abstract class com.hyphenate.easeui.widget.photoview.ScrollerProxy {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace photoview {
+        abstract class com.hyphenate.easeui.widget.photoview.VersionedGestureDetector {
+        }
+      }
+    }
+  }
+  
+
+  com.hyphenate.easeui.adapter.EaseAdapterDelegate .up.|> java.lang.Cloneable
+  com.hyphenate.easeui.adapter.EaseAdapterDelegate .up.|> Cloneable
+  com.hyphenate.easeui.domain.EaseEmojicon o-- com.hyphenate.easeui.domain.EaseEmojicon.Type : type
+  com.hyphenate.easeui.domain.EaseUser .up.|> Serializable
+  com.hyphenate.easeui.domain.EaseUser .up.|> java.io.Serializable
+  com.hyphenate.easeui.interfaces.EaseChatRoomListener .up.|> EMChatRoomChangeListener
+  com.hyphenate.easeui.interfaces.EaseChatRoomListener .up.|> com.hyphenate.EMChatRoomChangeListener
+  com.hyphenate.easeui.interfaces.EaseGroupListener .up.|> EMGroupChangeListener
+  com.hyphenate.easeui.interfaces.EaseGroupListener .up.|> com.hyphenate.EMGroupChangeListener
+  com.hyphenate.easeui.interfaces.EaseMessageCallback .up.|> EMCallBack
+  com.hyphenate.easeui.interfaces.EaseMessageCallback .up.|> com.hyphenate.EMCallBack
+  com.hyphenate.easeui.interfaces.OnEaseCallBack .up.|> OnCallBack
+  com.hyphenate.easeui.interfaces.OnEaseCallBack .up.|> com.hyphenate.easeui.interfaces.OnCallBack<T>
+  com.hyphenate.easeui.manager.BackgroundThreadFactory .up.|> ThreadFactory
+  com.hyphenate.easeui.manager.BackgroundThreadFactory .up.|> java.util.concurrent.ThreadFactory
+  com.hyphenate.easeui.manager.EaseChatPresenter .up.|> com.hyphenate.EMMessageListener
+  com.hyphenate.easeui.manager.EaseChatPresenter .up.|> EMMessageListener
+  com.hyphenate.easeui.manager.SidebarPresenter .up.|> com.hyphenate.easeui.widget.EaseSidebar.OnTouchEventListener
+  com.hyphenate.easeui.manager.SidebarPresenter .up.|> EaseSidebar.OnTouchEventListener
+  com.hyphenate.easeui.model.EaseEvent .up.|> java.io.Serializable
+  com.hyphenate.easeui.model.EaseEvent .up.|> Serializable
+  com.hyphenate.easeui.model.EaseEvent o-- com.hyphenate.easeui.model.EaseEvent.TYPE : type
+  com.hyphenate.easeui.model.EaseNotifier o-- com.hyphenate.easeui.model.EaseNotifier.EaseNotificationInfoProvider : notificationInfoProvider
+  com.hyphenate.easeui.modules.EaseBasePresenter .up.|> androidx.lifecycle.LifecycleObserver
+  com.hyphenate.easeui.modules.EaseBasePresenter .up.|> LifecycleObserver
+  com.hyphenate.easeui.modules.chat.EaseChatExtendMenu .up.|> IChatExtendMenu
+  com.hyphenate.easeui.modules.chat.EaseChatExtendMenu .up.|> OnItemClickListener
+  com.hyphenate.easeui.modules.chat.EaseChatExtendMenu .up.|> PagingScrollHelper.onPageChangeListener
+  com.hyphenate.easeui.modules.chat.EaseChatExtendMenu .up.|> com.hyphenate.easeui.interfaces.OnItemClickListener
+  com.hyphenate.easeui.modules.chat.EaseChatExtendMenu .up.|> com.hyphenate.easeui.modules.chat.interfaces.IChatExtendMenu
+  com.hyphenate.easeui.modules.chat.EaseChatExtendMenu .up.|> com.hyphenate.easeui.widget.chatextend.PagingScrollHelper.onPageChangeListener
+  com.hyphenate.easeui.modules.chat.EaseChatFragment .up.|> com.hyphenate.easeui.modules.chat.interfaces.OnAddMsgAttrsBeforeSendEvent
+  com.hyphenate.easeui.modules.chat.EaseChatFragment .up.|> com.hyphenate.easeui.modules.chat.interfaces.OnChatLayoutListener
+  com.hyphenate.easeui.modules.chat.EaseChatFragment .up.|> com.hyphenate.easeui.modules.chat.interfaces.OnChatRecordTouchListener
+  com.hyphenate.easeui.modules.chat.EaseChatFragment .up.|> com.hyphenate.easeui.modules.chat.interfaces.OnMenuChangeListener
+  com.hyphenate.easeui.modules.chat.EaseChatFragment .up.|> com.hyphenate.easeui.modules.chat.interfaces.OnTranslateMessageListener
+  com.hyphenate.easeui.modules.chat.EaseChatFragment .up.|> OnAddMsgAttrsBeforeSendEvent
+  com.hyphenate.easeui.modules.chat.EaseChatFragment .up.|> OnChatLayoutListener
+  com.hyphenate.easeui.modules.chat.EaseChatFragment .up.|> OnChatRecordTouchListener
+  com.hyphenate.easeui.modules.chat.EaseChatFragment .up.|> OnMenuChangeListener
+  com.hyphenate.easeui.modules.chat.EaseChatFragment .up.|> OnTranslateMessageListener
+  com.hyphenate.easeui.modules.chat.EaseChatInputMenu .up.|> com.hyphenate.easeui.modules.chat.interfaces.EaseChatExtendMenuItemClickListener
+  com.hyphenate.easeui.modules.chat.EaseChatInputMenu .up.|> com.hyphenate.easeui.modules.chat.interfaces.EaseChatPrimaryMenuListener
+  com.hyphenate.easeui.modules.chat.EaseChatInputMenu .up.|> com.hyphenate.easeui.modules.chat.interfaces.EaseEmojiconMenuListener
+  com.hyphenate.easeui.modules.chat.EaseChatInputMenu .up.|> com.hyphenate.easeui.modules.chat.interfaces.IChatInputMenu
+  com.hyphenate.easeui.modules.chat.EaseChatInputMenu .up.|> EaseChatExtendMenuItemClickListener
+  com.hyphenate.easeui.modules.chat.EaseChatInputMenu .up.|> EaseChatPrimaryMenuListener
+  com.hyphenate.easeui.modules.chat.EaseChatInputMenu .up.|> EaseEmojiconMenuListener
+  com.hyphenate.easeui.modules.chat.EaseChatInputMenu .up.|> IChatInputMenu
+  com.hyphenate.easeui.modules.chat.EaseChatLayout .up.|> ChatInputMenuListener
+  com.hyphenate.easeui.modules.chat.EaseChatLayout .up.|> EMMessageListener
+  com.hyphenate.easeui.modules.chat.EaseChatLayout .up.|> EaseChatMessageListLayout.OnChatErrorListener
+  com.hyphenate.easeui.modules.chat.EaseChatLayout .up.|> EaseChatMessageListLayout.OnMessageTouchListener
+  com.hyphenate.easeui.modules.chat.EaseChatLayout .up.|> IChatLayout
+  com.hyphenate.easeui.modules.chat.EaseChatLayout .up.|> IHandleMessageView
+  com.hyphenate.easeui.modules.chat.EaseChatLayout .up.|> IPopupWindow
+  com.hyphenate.easeui.modules.chat.EaseChatLayout .up.|> MessageListItemClickListener
+  com.hyphenate.easeui.modules.chat.EaseChatLayout o-- com.hyphenate.easeui.modules.chat.EaseChatLayout.ChatRoomListener : chatRoomListener
+  com.hyphenate.easeui.modules.chat.EaseChatLayout o-- com.hyphenate.easeui.modules.chat.EaseChatLayout.GroupListener : groupListener
+  com.hyphenate.easeui.modules.chat.EaseChatLayout .up.|> com.hyphenate.EMMessageListener
+  com.hyphenate.easeui.modules.chat.EaseChatLayout .up.|> com.hyphenate.easeui.interfaces.MessageListItemClickListener
+  com.hyphenate.easeui.modules.chat.EaseChatLayout .up.|> com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout.OnChatErrorListener
+  com.hyphenate.easeui.modules.chat.EaseChatLayout .up.|> com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout.OnMessageTouchListener
+  com.hyphenate.easeui.modules.chat.EaseChatLayout .up.|> com.hyphenate.easeui.modules.chat.interfaces.ChatInputMenuListener
+  com.hyphenate.easeui.modules.chat.EaseChatLayout .up.|> com.hyphenate.easeui.modules.chat.interfaces.IChatLayout
+  com.hyphenate.easeui.modules.chat.EaseChatLayout .up.|> com.hyphenate.easeui.modules.chat.presenter.IHandleMessageView
+  com.hyphenate.easeui.modules.chat.EaseChatLayout .up.|> com.hyphenate.easeui.modules.interfaces.IPopupWindow
+  com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout .up.|> com.hyphenate.easeui.modules.chat.interfaces.IChatMessageItemSet
+  com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout .up.|> com.hyphenate.easeui.modules.chat.interfaces.IChatMessageListLayout
+  com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout .up.|> com.hyphenate.easeui.modules.chat.interfaces.IRecyclerViewHandle
+  com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout .up.|> com.hyphenate.easeui.modules.chat.presenter.IChatMessageListView
+  com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout .up.|> IChatMessageItemSet
+  com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout .up.|> IChatMessageListLayout
+  com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout .up.|> IChatMessageListView
+  com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout .up.|> IRecyclerViewHandle
+  com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout o-- com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout.OnChatErrorListener : errorListener
+  com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout o-- com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout.LoadDataType : loadDataType
+  com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout o-- com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout.LoadMoreStatus : loadMoreStatus
+  com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout o-- com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout.OnMessageTouchListener : messageTouchListener
+  com.hyphenate.easeui.modules.chat.EaseChatPrimaryMenu .up.|> EaseInputEditText.OnEditTextChangeListener
+  com.hyphenate.easeui.modules.chat.EaseChatPrimaryMenu .up.|> IChatPrimaryMenu
+  com.hyphenate.easeui.modules.chat.EaseChatPrimaryMenu .up.|> TextWatcher
+  com.hyphenate.easeui.modules.chat.EaseChatPrimaryMenu .up.|> View.OnClickListener
+  com.hyphenate.easeui.modules.chat.EaseChatPrimaryMenu .up.|> android.text.TextWatcher
+  com.hyphenate.easeui.modules.chat.EaseChatPrimaryMenu .up.|> android.view.View.OnClickListener
+  com.hyphenate.easeui.modules.chat.EaseChatPrimaryMenu .up.|> com.hyphenate.easeui.modules.chat.EaseInputEditText.OnEditTextChangeListener
+  com.hyphenate.easeui.modules.chat.EaseChatPrimaryMenu .up.|> com.hyphenate.easeui.modules.chat.interfaces.IChatPrimaryMenu
+  com.hyphenate.easeui.modules.chat.EaseEmojiconMenu .up.|> com.hyphenate.easeui.modules.chat.interfaces.IChatEmojiconMenu
+  com.hyphenate.easeui.modules.chat.EaseEmojiconMenu .up.|> IChatEmojiconMenu
+  com.hyphenate.easeui.modules.chat.EaseInputEditText .up.|> TextView.OnEditorActionListener
+  com.hyphenate.easeui.modules.chat.EaseInputEditText .up.|> View.OnKeyListener
+  com.hyphenate.easeui.modules.chat.EaseInputEditText o-- com.hyphenate.easeui.modules.chat.EaseInputEditText.OnEditTextChangeListener : listener
+  com.hyphenate.easeui.modules.chat.EaseInputEditText .up.|> android.view.View.OnKeyListener
+  com.hyphenate.easeui.modules.chat.EaseInputEditText .up.|> android.widget.TextView.OnEditorActionListener
+  com.hyphenate.easeui.modules.contact.EaseContactLayout .up.|> IContactLayout
+  com.hyphenate.easeui.modules.contact.EaseContactLayout .up.|> OnContactLoadListener
+  com.hyphenate.easeui.modules.contact.EaseContactLayout .up.|> SwipeRefreshLayout.OnRefreshListener
+  com.hyphenate.easeui.modules.contact.EaseContactLayout .up.|> androidx.swiperefreshlayout.widget.SwipeRefreshLayout.OnRefreshListener
+  com.hyphenate.easeui.modules.contact.EaseContactLayout .up.|> com.hyphenate.easeui.modules.contact.interfaces.IContactLayout
+  com.hyphenate.easeui.modules.contact.EaseContactLayout .up.|> com.hyphenate.easeui.modules.contact.interfaces.OnContactLoadListener
+  com.hyphenate.easeui.modules.contact.EaseContactListFragment .up.|> OnItemClickListener
+  com.hyphenate.easeui.modules.contact.EaseContactListFragment .up.|> OnPopupMenuItemClickListener
+  com.hyphenate.easeui.modules.contact.EaseContactListFragment .up.|> OnPopupMenuPreShowListener
+  com.hyphenate.easeui.modules.contact.EaseContactListFragment .up.|> com.hyphenate.easeui.interfaces.OnItemClickListener
+  com.hyphenate.easeui.modules.contact.EaseContactListFragment .up.|> com.hyphenate.easeui.modules.menu.OnPopupMenuItemClickListener
+  com.hyphenate.easeui.modules.contact.EaseContactListFragment .up.|> com.hyphenate.easeui.modules.menu.OnPopupMenuPreShowListener
+  com.hyphenate.easeui.modules.contact.EaseContactListLayout .up.|> IContactCustomListLayout
+  com.hyphenate.easeui.modules.contact.EaseContactListLayout .up.|> IContactListLayout
+  com.hyphenate.easeui.modules.contact.EaseContactListLayout .up.|> IContactListStyle
+  com.hyphenate.easeui.modules.contact.EaseContactListLayout .up.|> IEaseContactListView
+  com.hyphenate.easeui.modules.contact.EaseContactListLayout .up.|> IPopupMenu
+  com.hyphenate.easeui.modules.contact.EaseContactListLayout .up.|> com.hyphenate.easeui.modules.contact.interfaces.IContactCustomListLayout
+  com.hyphenate.easeui.modules.contact.EaseContactListLayout .up.|> com.hyphenate.easeui.modules.contact.interfaces.IContactListLayout
+  com.hyphenate.easeui.modules.contact.EaseContactListLayout .up.|> com.hyphenate.easeui.modules.contact.interfaces.IContactListStyle
+  com.hyphenate.easeui.modules.contact.EaseContactListLayout .up.|> com.hyphenate.easeui.modules.contact.presenter.IEaseContactListView
+  com.hyphenate.easeui.modules.contact.EaseContactListLayout .up.|> com.hyphenate.easeui.modules.interfaces.IPopupMenu
+  com.hyphenate.easeui.modules.conversation.EaseConversationListFragment .up.|> OnConversationChangeListener
+  com.hyphenate.easeui.modules.conversation.EaseConversationListFragment .up.|> OnConversationLoadListener
+  com.hyphenate.easeui.modules.conversation.EaseConversationListFragment .up.|> OnItemClickListener
+  com.hyphenate.easeui.modules.conversation.EaseConversationListFragment .up.|> OnPopupMenuItemClickListener
+  com.hyphenate.easeui.modules.conversation.EaseConversationListFragment .up.|> OnPopupMenuPreShowListener
+  com.hyphenate.easeui.modules.conversation.EaseConversationListFragment .up.|> SwipeRefreshLayout.OnRefreshListener
+  com.hyphenate.easeui.modules.conversation.EaseConversationListFragment .up.|> androidx.swiperefreshlayout.widget.SwipeRefreshLayout.OnRefreshListener
+  com.hyphenate.easeui.modules.conversation.EaseConversationListFragment .up.|> com.hyphenate.easeui.interfaces.OnItemClickListener
+  com.hyphenate.easeui.modules.conversation.EaseConversationListFragment .up.|> com.hyphenate.easeui.modules.conversation.interfaces.OnConversationChangeListener
+  com.hyphenate.easeui.modules.conversation.EaseConversationListFragment .up.|> com.hyphenate.easeui.modules.conversation.interfaces.OnConversationLoadListener
+  com.hyphenate.easeui.modules.conversation.EaseConversationListFragment .up.|> com.hyphenate.easeui.modules.menu.OnPopupMenuItemClickListener
+  com.hyphenate.easeui.modules.conversation.EaseConversationListFragment .up.|> com.hyphenate.easeui.modules.menu.OnPopupMenuPreShowListener
+  com.hyphenate.easeui.modules.conversation.EaseConversationListLayout .up.|> com.hyphenate.easeui.modules.conversation.interfaces.IConversationListLayout
+  com.hyphenate.easeui.modules.conversation.EaseConversationListLayout .up.|> com.hyphenate.easeui.modules.conversation.interfaces.IConversationStyle
+  com.hyphenate.easeui.modules.conversation.EaseConversationListLayout .up.|> com.hyphenate.easeui.modules.conversation.presenter.IEaseConversationListView
+  com.hyphenate.easeui.modules.conversation.EaseConversationListLayout .up.|> com.hyphenate.easeui.modules.interfaces.IPopupMenu
+  com.hyphenate.easeui.modules.conversation.EaseConversationListLayout .up.|> IConversationListLayout
+  com.hyphenate.easeui.modules.conversation.EaseConversationListLayout .up.|> IConversationStyle
+  com.hyphenate.easeui.modules.conversation.EaseConversationListLayout .up.|> IEaseConversationListView
+  com.hyphenate.easeui.modules.conversation.EaseConversationListLayout .up.|> IPopupMenu
+  com.hyphenate.easeui.modules.conversation.model.EaseConversationInfo .up.|> Comparable
+  com.hyphenate.easeui.modules.conversation.model.EaseConversationInfo .up.|> Serializable
+  com.hyphenate.easeui.modules.conversation.model.EaseConversationInfo o-- com.hyphenate.easeui.modules.conversation.model.EaseConversationInfo.OnSelectListener : listener
+  com.hyphenate.easeui.modules.conversation.model.EaseConversationInfo .up.|> java.io.Serializable
+  com.hyphenate.easeui.modules.conversation.model.EaseConversationInfo .up.|> java.lang.Comparable<com.hyphenate.easeui.modules.conversation.model.EaseConversationInfo>
+  com.hyphenate.easeui.modules.conversation.model.EaseConversationSetStyle o-- com.hyphenate.easeui.modules.conversation.model.EaseConversationSetStyle.UnreadDotPosition : unreadDotPosition
+  com.hyphenate.easeui.modules.menu.EasePopupMenuHelper .up.|> PopupMenu.OnDismissListener
+  com.hyphenate.easeui.modules.menu.EasePopupMenuHelper .up.|> PopupMenu.OnMenuItemClickListener
+  com.hyphenate.easeui.modules.menu.EasePopupMenuHelper .up.|> androidx.appcompat.widget.PopupMenu.OnDismissListener
+  com.hyphenate.easeui.modules.menu.EasePopupMenuHelper .up.|> androidx.appcompat.widget.PopupMenu.OnMenuItemClickListener
+  com.hyphenate.easeui.modules.menu.EasePopupWindowHelper o-- com.hyphenate.easeui.modules.menu.EasePopupWindowHelper.MenuAdapter : adapter
+  com.hyphenate.easeui.ui.EaseBaiduMapActivity .up.|> com.hyphenate.easeui.widget.EaseTitleBar.OnBackPressListener
+  com.hyphenate.easeui.ui.EaseBaiduMapActivity .up.|> com.hyphenate.easeui.widget.EaseTitleBar.OnRightClickListener
+  com.hyphenate.easeui.ui.EaseBaiduMapActivity .up.|> EaseTitleBar.OnBackPressListener
+  com.hyphenate.easeui.ui.EaseBaiduMapActivity .up.|> EaseTitleBar.OnRightClickListener
+  com.hyphenate.easeui.ui.EaseBaiduMapActivity o-- com.hyphenate.easeui.ui.EaseBaiduMapActivity.BaiduSDKReceiver : mBaiduReceiver
+  com.hyphenate.easeui.ui.EaseDingAckUserListActivity o-- com.hyphenate.easeui.ui.EaseDingAckUserListActivity.AckUserAdapter : userAdapter
+  com.hyphenate.easeui.viewholder.EaseChatRowViewHolder .up.|> com.hyphenate.easeui.widget.chatrow.EaseChatRow.EaseChatRowActionCallback
+  com.hyphenate.easeui.viewholder.EaseChatRowViewHolder .up.|> EaseChatRow.EaseChatRowActionCallback
+  com.hyphenate.easeui.widget.EaseAlertDialog o-- com.hyphenate.easeui.widget.EaseAlertDialog.AlertDialogUser : user
+  com.hyphenate.easeui.widget.EaseRecyclerView o-- com.hyphenate.easeui.widget.EaseRecyclerView.RecyclerViewContextMenuInfo : mContextMenuInfo
+  com.hyphenate.easeui.widget.EaseSidebar o-- com.hyphenate.easeui.widget.EaseSidebar.OnTouchEventListener : mListener
+  com.hyphenate.easeui.widget.EaseTitleBar .up.|> View.OnClickListener
+  com.hyphenate.easeui.widget.EaseTitleBar o-- com.hyphenate.easeui.widget.EaseTitleBar.OnBackPressListener : mBackPressListener
+  com.hyphenate.easeui.widget.EaseTitleBar o-- com.hyphenate.easeui.widget.EaseTitleBar.OnRightClickListener : mOnRightClickListener
+  com.hyphenate.easeui.widget.chatextend.HorizontalPageLayoutManager .up.|> PageDecorationLastJudge
+  com.hyphenate.easeui.widget.chatextend.PagingScrollHelper o-- com.hyphenate.easeui.widget.chatextend.PagingScrollHelper.PageOnFlingListener : mOnFlingListener
+  com.hyphenate.easeui.widget.chatextend.PagingScrollHelper o-- com.hyphenate.easeui.widget.chatextend.PagingScrollHelper.onPageChangeListener : mOnPageChangeListener
+  com.hyphenate.easeui.widget.chatextend.PagingScrollHelper o-- com.hyphenate.easeui.widget.chatextend.PagingScrollHelper.PageOnScrollListener : mOnScrollListener
+  com.hyphenate.easeui.widget.chatextend.PagingScrollHelper o-- com.hyphenate.easeui.widget.chatextend.PagingScrollHelper.MyOnTouchListener : mOnTouchListener
+  com.hyphenate.easeui.widget.chatextend.PagingScrollHelper o-- com.hyphenate.easeui.widget.chatextend.PagingScrollHelper.ORIENTATION : mOrientation
+  com.hyphenate.easeui.widget.chatrow.EaseChatRow o-- com.hyphenate.easeui.widget.chatrow.EaseChatRow.EaseChatCallback : chatCallback
+  com.hyphenate.easeui.widget.chatrow.EaseChatRow o-- com.hyphenate.easeui.widget.chatrow.EaseChatRow.EaseChatRowActionCallback : itemActionCallback
+  com.hyphenate.easeui.widget.emojicon.EaseEmojiconPagerView o-- com.hyphenate.easeui.widget.emojicon.EaseEmojiconPagerView.EaseEmojiconPagerViewListener : pagerViewListener
+  com.hyphenate.easeui.widget.emojicon.EaseEmojiconScrollTabBar o-- com.hyphenate.easeui.widget.emojicon.EaseEmojiconScrollTabBar.EaseScrollTabBarItemClickListener : itemClickListener
+  com.hyphenate.easeui.widget.photoview.EasePhotoView .up.|> IPhotoView
+  com.hyphenate.easeui.widget.photoview.PhotoViewAttacher .up.|> GestureDetector.OnDoubleTapListener
+  com.hyphenate.easeui.widget.photoview.PhotoViewAttacher .up.|> IPhotoView
+  com.hyphenate.easeui.widget.photoview.PhotoViewAttacher .up.|> VersionedGestureDetector.OnGestureListener
+  com.hyphenate.easeui.widget.photoview.PhotoViewAttacher .up.|> View.OnTouchListener
+  com.hyphenate.easeui.widget.photoview.PhotoViewAttacher .up.|> ViewTreeObserver.OnGlobalLayoutListener
+  com.hyphenate.easeui.widget.photoview.PhotoViewAttacher o-- com.hyphenate.easeui.widget.photoview.PhotoViewAttacher.FlingRunnable : mCurrentFlingRunnable
+  com.hyphenate.easeui.widget.photoview.PhotoViewAttacher o-- com.hyphenate.easeui.widget.photoview.PhotoViewAttacher.OnMatrixChangedListener : mMatrixChangeListener
+  com.hyphenate.easeui.widget.photoview.PhotoViewAttacher o-- com.hyphenate.easeui.widget.photoview.PhotoViewAttacher.OnPhotoTapListener : mPhotoTapListener
+  com.hyphenate.easeui.widget.photoview.PhotoViewAttacher o-- com.hyphenate.easeui.widget.photoview.PhotoViewAttacher.OnViewTapListener : mViewTapListener
+  com.hyphenate.easeui.widget.photoview.VersionedGestureDetector o-- com.hyphenate.easeui.widget.photoview.VersionedGestureDetector.OnGestureListener : mListener
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

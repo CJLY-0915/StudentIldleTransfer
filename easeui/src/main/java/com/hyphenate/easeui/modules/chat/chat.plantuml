@@ -1,0 +1,740 @@
+@startuml
+
+title __CHAT's Class Diagram__\n
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseChatExtendMenu {
+            # context : Context
+            - adapter : EaseChatExtendMenuAdapter
+            - currentPosition : int
+            - helper : PagingScrollHelper
+            - indicatorAdapter : EaseChatExtendMenuIndicatorAdapter
+            - itemIds : int[]
+            - itemListener : EaseChatExtendMenuItemClickListener
+            - itemMap : Map<Integer, ChatMenuItemModel>
+            - itemModels : List<ChatMenuItemModel>
+            - itemStrings : int[]
+            - itemdrawables : int[]
+            - numColumns : int
+            - numRows : int
+            - rvExtendMenu : RecyclerView
+            - rvIndicator : RecyclerView
+            + EaseChatExtendMenu()
+            + EaseChatExtendMenu()
+            + EaseChatExtendMenu()
+            + clear()
+            + init()
+            + onItemClick()
+            + onPageChange()
+            + registerMenuItem()
+            + registerMenuItem()
+            + registerMenuItem()
+            + registerMenuItem()
+            + registerMenuItem()
+            + registerMenuItem()
+            + registerMenuItem()
+            + registerMenuItem()
+            + setEaseChatExtendMenuItemClickListener()
+            + setMenuOrder()
+            # onDetachedFromWindow()
+            - addDefaultData()
+            - init()
+            - initChatExtendMenu()
+            - initChatExtendMenuIndicator()
+            - initLayout()
+            - sortByOrder()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseChatExtendMenu.ChatMenuItem {
+            - imageView : ImageView
+            - textView : TextView
+            + ChatMenuItem()
+            + ChatMenuItem()
+            + ChatMenuItem()
+            + setImage()
+            + setText()
+            + setText()
+            - init()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseChatExtendMenu.ChatMenuItemModel {
+            + clickListener : EaseChatExtendMenuItemClickListener
+            + id : int
+            + image : int
+            + name : String
+            + order : int
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseChatFragment {
+            + chatLayout : EaseChatLayout
+            + chatType : int
+            + conversationId : String
+            + historyMsgId : String
+            + isMessageInit : boolean
+            + isRoam : boolean
+            {static} # REQUEST_CODE_CAMERA : int
+            {static} # REQUEST_CODE_DING_MSG : int
+            {static} # REQUEST_CODE_LOCAL : int
+            {static} # REQUEST_CODE_MAP : int
+            {static} # REQUEST_CODE_SELECT_FILE : int
+            {static} # REQUEST_CODE_SELECT_VIDEO : int
+            # cameraFile : File
+            {static} - TAG : String
+            - listener : OnChatLayoutListener
+            + addMsgAttrsBeforeSend()
+            + initArguments()
+            + initData()
+            + initListener()
+            + initView()
+            + onActivityCreated()
+            + onActivityResult()
+            + onBubbleClick()
+            + onBubbleLongClick()
+            + onChatError()
+            + onChatExtendMenuItemClick()
+            + onChatSuccess()
+            + onCreateView()
+            + onMenuItemClick()
+            + onPreMenu()
+            + onRecordTouch()
+            + onResume()
+            + onTextChanged()
+            + onUserAvatarClick()
+            + onUserAvatarLongClick()
+            + onViewCreated()
+            + setOnChatLayoutListener()
+            + translateMessageFail()
+            + translateMessageSuccess()
+            # checkSdCardExist()
+            # onActivityResultForCamera()
+            # onActivityResultForDingMsg()
+            # onActivityResultForLocalFiles()
+            # onActivityResultForLocalPhotos()
+            # onActivityResultForMapLocation()
+            # selectFileFromLocal()
+            # selectPicFromCamera()
+            # selectPicFromLocal()
+            # selectVideoFromLocal()
+            # startMapLocation()
+            - getLayoutId()
+            - onActivityResultForLocalVideos()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseChatInputMenu {
+            {static} - TAG : String
+            - chatMenuContainer : LinearLayout
+            - emojiconMenu : IChatEmojiconMenu
+            - extendMenu : IChatExtendMenu
+            - extendMenuContainer : FrameLayout
+            - menuListener : ChatInputMenuListener
+            - primaryMenu : IChatPrimaryMenu
+            - primaryMenuContainer : FrameLayout
+            + EaseChatInputMenu()
+            + EaseChatInputMenu()
+            + EaseChatInputMenu()
+            + getChatExtendMenu()
+            + getEmojiconMenu()
+            + getPrimaryMenu()
+            + hideExtendContainer()
+            + hideSoftKeyboard()
+            + onBackPressed()
+            + onChatExtendMenuItemClick()
+            + onDeleteImageClicked()
+            + onEditTextClicked()
+            + onEditTextHasFocus()
+            + onExpressionClicked()
+            + onPressToSpeakBtnTouch()
+            + onSendBtnClicked()
+            + onToggleEmojiconClicked()
+            + onToggleExtendClicked()
+            + onToggleTextBtnClicked()
+            + onToggleVoiceBtnClicked()
+            + onTyping()
+            + setChatInputMenuListener()
+            + setCustomEmojiconMenu()
+            + setCustomExtendMenu()
+            + setCustomPrimaryMenu()
+            + showEmojiconMenu()
+            + showExtendMenu()
+            # onFinishInflate()
+            - init()
+            - showEmojiconMenu()
+            - showExtendMenu()
+            - showPrimaryMenu()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseChatLayout {
+            {static} + ACTION_TYPING_BEGIN : String
+            {static} + ACTION_TYPING_END : String
+            {static} + AT_PREFIX : String
+            {static} + AT_SUFFIX : String
+            {static} # OTHER_TYPING_SHOW_TIME : int
+            {static} # TYPING_SHOW_TIME : int
+            {static} - MSG_OTHER_TYPING_END : int
+            {static} - MSG_TYPING_END : int
+            {static} - MSG_TYPING_HEARTBEAT : int
+            {static} - TAG : String
+            - chatType : int
+            - clipboard : ClipboardManager
+            - conversationId : String
+            - inputMenu : EaseChatInputMenu
+            - isNotFirstSend : boolean
+            - isReportYourSelf : boolean
+            - listener : OnChatLayoutListener
+            - menuChangeListener : OnMenuChangeListener
+            - menuHelper : EasePopupWindowHelper
+            - messageListLayout : EaseChatMessageListLayout
+            - presenter : EaseHandleMessagePresenter
+            - recallMessageListener : OnRecallMessageResultListener
+            - recordTouchListener : OnChatRecordTouchListener
+            - sendMsgEvent : OnAddMsgAttrsBeforeSendEvent
+            - showDefaultMenu : boolean
+            - targetLanguageCode : String
+            - translateListener : OnTranslateMessageListener
+            - turnOnTyping : boolean
+            - typingHandler : Handler
+            - voiceRecorder : EaseVoiceRecorderView
+            + EaseChatLayout()
+            + EaseChatLayout()
+            + EaseChatLayout()
+            + addItemMenu()
+            + addItemMenu()
+            + addMessageAttributes()
+            + addMsgAttrBeforeSend()
+            + clearMenu()
+            + context()
+            + createThumbFileFail()
+            + deleteLocalMessageSuccess()
+            + deleteMessage()
+            + findItem()
+            + findItemVisible()
+            + getChatInputMenu()
+            + getChatMessageListLayout()
+            + getInputContent()
+            + getMenuHelper()
+            + hideTranslate()
+            + init()
+            + init()
+            + initHistoryModel()
+            + inputAtUsername()
+            + isChatRoomCon()
+            + isGroupCon()
+            + loadData()
+            + loadData()
+            + loadDefaultData()
+            + onBubbleClick()
+            + onBubbleLongClick()
+            + onChatError()
+            + onChatExtendMenuItemClick()
+            + onCmdMessageReceived()
+            + onExpressionClicked()
+            + onMessageChanged()
+            + onMessageCreate()
+            + onMessageDelivered()
+            + onMessageError()
+            + onMessageInProgress()
+            + onMessageRead()
+            + onMessageRecalled()
+            + onMessageReceived()
+            + onMessageSuccess()
+            + onPresenterMessageError()
+            + onPresenterMessageInProgress()
+            + onPresenterMessageSuccess()
+            + onPressToSpeakBtnTouch()
+            + onResendClick()
+            + onSendMessage()
+            + onTouchItemOutside()
+            + onTyping()
+            + onUserAvatarClick()
+            + onUserAvatarLongClick()
+            + onViewDragging()
+            + recallMessage()
+            + recallMessageFail()
+            + recallMessageFinish()
+            + resendMessage()
+            + sendAtMessage()
+            + sendBigExpressionMessage()
+            + sendFileMessage()
+            + sendImageMessage()
+            + sendImageMessage()
+            + sendLocationMessage()
+            + sendMessage()
+            + sendMessageFail()
+            + sendMessageFinish()
+            + sendReadAck()
+            + sendTextMessage()
+            + sendTextMessage()
+            + sendVideoMessage()
+            + sendVoiceMessage()
+            + sendVoiceMessage()
+            + setOnAddMsgAttrsBeforeSendEvent()
+            + setOnChatLayoutListener()
+            + setOnChatRecordTouchListener()
+            + setOnPopupWindowItemClickListener()
+            + setOnRecallMessageResultListener()
+            + setOnTranslateListener()
+            + setReportYourSelf()
+            + setTargetLanguageCode()
+            + showItemDefaultMenu()
+            + translateMessage()
+            + translateMessageFail()
+            + translateMessageSuccess()
+            + turnOnTypingMonitor()
+            # onDetachedFromWindow()
+            - finishCurrent()
+            - getChatManager()
+            - initListener()
+            - initTypingHandler()
+            - initView()
+            - insertText()
+            - refreshMessage()
+            - refreshMessages()
+            - sendChannelAck()
+            - sendGroupReadAck()
+            - setMenuByMsgType()
+            - setOtherTypingEnd()
+            - setTypingBeginMsg()
+            - setTypingEndMsg()
+            - showDefaultMenu()
+            - showTranslation()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseChatLayout.ChatRoomListener {
+            + onChatRoomDestroyed()
+            + onMemberExited()
+            + onMemberJoined()
+            + onRemovedFromChatRoom()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseChatLayout.GroupListener {
+            + onGroupDestroyed()
+            + onUserRemoved()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout {
+            {static} - DEFAULT_PAGE_SIZE : int
+            {static} - TAG : String
+            - baseAdapter : ConcatAdapter
+            - canUseRefresh : boolean
+            - chatSetHelper : EaseChatItemStyleHelper
+            - conType : EMConversationType
+            - conversation : EMConversation
+            - layoutManager : LinearLayoutManager
+            - messageAdapter : EaseMessageAdapter
+            - messageListItemClickListener : MessageListItemClickListener
+            - msgId : String
+            - pageSize : int
+            - presenter : EaseChatMessagePresenter
+            - recyclerViewLastHeight : int
+            - rvList : RecyclerView
+            - srlRefresh : SwipeRefreshLayout
+            - username : String
+            + EaseChatMessageListLayout()
+            + EaseChatMessageListLayout()
+            + EaseChatMessageListLayout()
+            + addData()
+            + addFooterAdapter()
+            + addHeaderAdapter()
+            + addRVItemDecoration()
+            + canUseDefaultRefresh()
+            + context()
+            + getCurrentConversation()
+            + getMessageAdapter()
+            + haveNewMessages()
+            + init()
+            + init()
+            + isChatRoomCon()
+            + isGroupChat()
+            {static} + isVisibleBottom()
+            + joinChatRoomFail()
+            + joinChatRoomSuccess()
+            + lastMsgScrollToBottom()
+            + loadData()
+            + loadData()
+            + loadDefaultData()
+            + loadLocalMsgSuccess()
+            + loadMoreHistoryData()
+            + loadMoreLocalHistoryMsgSuccess()
+            + loadMoreLocalMsgSuccess()
+            + loadMorePreviousData()
+            + loadMoreServerMsgSuccess()
+            + loadMsgFail()
+            + loadNoLocalMsg()
+            + loadNoMoreLocalHistoryMsg()
+            + loadNoMoreLocalMsg()
+            + loadServerMsgSuccess()
+            + moveToPosition()
+            + refreshCurrentConSuccess()
+            + refreshMessage()
+            + refreshMessages()
+            + refreshToLatest()
+            + removeAdapter()
+            + removeMessage()
+            + removeRVItemDecoration()
+            + runOnUi()
+            + setAvatarDefaultSrc()
+            + setAvatarShapeType()
+            + setData()
+            + setItemReceiverBackground()
+            + setItemSenderBackground()
+            + setItemShowType()
+            + setItemTextColor()
+            + setItemTextSize()
+            + setMessageListItemClickListener()
+            + setOnChatErrorListener()
+            + setOnMessageTouchListener()
+            + setPresenter()
+            + setTimeBackground()
+            + setTimeTextColor()
+            + setTimeTextSize()
+            + showNickname()
+            # onDetachedFromWindow()
+            - checkConType()
+            - finishRefresh()
+            - getListFirstMessageId()
+            - getListLastMessageId()
+            - initAttrs()
+            - initListener()
+            - initViews()
+            - isSingleChat()
+            - loadData()
+            - notifyDataSetChanged()
+            - registerChatType()
+            - seekToPosition()
+            - setMoveAnimation()
+            - smoothSeekToPosition()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        enum LoadDataType {
+          HISTORY
+          LOCAL
+          ROAM
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        enum LoadMoreStatus {
+          HAS_MORE
+          IS_LOADING
+          NO_MORE_DATA
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        interface com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout.OnChatErrorListener {
+            {abstract} + onChatError()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        interface com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout.OnMessageTouchListener {
+            {abstract} + onTouchItemOutside()
+            {abstract} + onViewDragging()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        enum ShowType {
+          LEFT
+          NORMAL
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseChatPrimaryMenu {
+            # activity : Activity
+            # inputManager : InputMethodManager
+            - buttonMore : CheckBox
+            - buttonPressToSpeak : FrameLayout
+            - buttonSend : Button
+            - buttonSetModeKeyboard : ImageView
+            - buttonSetModeVoice : ImageView
+            - editText : EaseInputEditText
+            - edittext_layout : FrameLayout
+            - faceChecked : ImageView
+            - faceLayout : RelativeLayout
+            - faceNormal : ImageView
+            - listener : EaseChatPrimaryMenuListener
+            - menuType : EaseInputMenuStyle
+            - rlBottom : LinearLayout
+            + EaseChatPrimaryMenu()
+            + EaseChatPrimaryMenu()
+            + EaseChatPrimaryMenu()
+            + afterTextChanged()
+            + beforeTextChanged()
+            + getEditText()
+            + hideExtendStatus()
+            + hideSoftKeyboard()
+            + onClick()
+            + onClickKeyboardSendBtn()
+            + onEditTextHasFocus()
+            + onEmojiconDeleteEvent()
+            + onEmojiconInputEvent()
+            + onTextChanged()
+            + onTextInsert()
+            + setEaseChatPrimaryMenuListener()
+            + setMenuBackground()
+            + setMenuShowType()
+            + setSendButtonBackground()
+            + showEmojiconStatus()
+            + showMoreStatus()
+            + showNormalStatus()
+            + showTextStatus()
+            + showVoiceStatus()
+            # onDetachedFromWindow()
+            - checkMenuType()
+            - checkSendButton()
+            - initListener()
+            - initViews()
+            - showNormalFaceImage()
+            - showSelectedFaceImage()
+            - showSendButton()
+            - showSoftKeyboard()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseEmojiconMenu {
+            - bigEmojiconColumns : int
+            {static} - defaultBigColumns : int
+            {static} - defaultColumns : int
+            - emojiconColumns : int
+            - emojiconGroupList : List<EaseEmojiconGroupEntity>
+            - indicatorView : EaseEmojiconIndicatorView
+            - listener : EaseEmojiconMenuListener
+            - pagerView : EaseEmojiconPagerView
+            - tabBar : EaseEmojiconScrollTabBar
+            + EaseEmojiconMenu()
+            + EaseEmojiconMenu()
+            + EaseEmojiconMenu()
+            + addEmojiconGroup()
+            + addEmojiconGroup()
+            + init()
+            + init()
+            + removeEmojiconGroup()
+            + setEmojiconMenuListener()
+            + setTabBarVisibility()
+            - initAttrs()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseEmojiconMenu.EmojiconPagerViewListener {
+            + onDeleteImageClicked()
+            + onExpressionClicked()
+            + onGroupInnerPagePostionChanged()
+            + onGroupMaxPageSizeChanged()
+            + onGroupPagePostionChangedTo()
+            + onGroupPositionChanged()
+            + onPagerViewInited()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        class com.hyphenate.easeui.modules.chat.EaseInputEditText {
+            - ctrlPress : boolean
+            + EaseInputEditText()
+            + EaseInputEditText()
+            + EaseInputEditText()
+            + onEditorAction()
+            + onKey()
+            + setOnEditTextChangeListener()
+            # onFocusChanged()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        interface com.hyphenate.easeui.modules.chat.EaseInputEditText.OnEditTextChangeListener {
+            {abstract} + onClickKeyboardSendBtn()
+            {abstract} + onEditTextHasFocus()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace modules {
+      namespace chat {
+        enum EaseInputMenuStyle {
+          All
+          DISABLE_EMOJICON
+          DISABLE_VOICE
+          DISABLE_VOICE_EMOJICON
+          ONLY_TEXT
+        }
+      }
+    }
+  }
+  
+
+  com.hyphenate.easeui.modules.chat.EaseChatExtendMenu .up.|> IChatExtendMenu
+  com.hyphenate.easeui.modules.chat.EaseChatExtendMenu .up.|> OnItemClickListener
+  com.hyphenate.easeui.modules.chat.EaseChatExtendMenu .up.|> PagingScrollHelper.onPageChangeListener
+  com.hyphenate.easeui.modules.chat.EaseChatExtendMenu +-down- com.hyphenate.easeui.modules.chat.EaseChatExtendMenu.ChatMenuItem
+  com.hyphenate.easeui.modules.chat.EaseChatExtendMenu +-down- com.hyphenate.easeui.modules.chat.EaseChatExtendMenu.ChatMenuItemModel
+  com.hyphenate.easeui.modules.chat.EaseChatFragment .up.|> OnAddMsgAttrsBeforeSendEvent
+  com.hyphenate.easeui.modules.chat.EaseChatFragment .up.|> OnChatLayoutListener
+  com.hyphenate.easeui.modules.chat.EaseChatFragment .up.|> OnChatRecordTouchListener
+  com.hyphenate.easeui.modules.chat.EaseChatFragment .up.|> OnMenuChangeListener
+  com.hyphenate.easeui.modules.chat.EaseChatFragment .up.|> OnTranslateMessageListener
+  com.hyphenate.easeui.modules.chat.EaseChatInputMenu .up.|> EaseChatExtendMenuItemClickListener
+  com.hyphenate.easeui.modules.chat.EaseChatInputMenu .up.|> EaseChatPrimaryMenuListener
+  com.hyphenate.easeui.modules.chat.EaseChatInputMenu .up.|> EaseEmojiconMenuListener
+  com.hyphenate.easeui.modules.chat.EaseChatInputMenu .up.|> IChatInputMenu
+  com.hyphenate.easeui.modules.chat.EaseChatLayout .up.|> ChatInputMenuListener
+  com.hyphenate.easeui.modules.chat.EaseChatLayout .up.|> EMMessageListener
+  com.hyphenate.easeui.modules.chat.EaseChatLayout .up.|> EaseChatMessageListLayout.OnChatErrorListener
+  com.hyphenate.easeui.modules.chat.EaseChatLayout .up.|> EaseChatMessageListLayout.OnMessageTouchListener
+  com.hyphenate.easeui.modules.chat.EaseChatLayout .up.|> IChatLayout
+  com.hyphenate.easeui.modules.chat.EaseChatLayout .up.|> IHandleMessageView
+  com.hyphenate.easeui.modules.chat.EaseChatLayout .up.|> IPopupWindow
+  com.hyphenate.easeui.modules.chat.EaseChatLayout .up.|> MessageListItemClickListener
+  com.hyphenate.easeui.modules.chat.EaseChatLayout o-- com.hyphenate.easeui.modules.chat.EaseChatLayout.ChatRoomListener : chatRoomListener
+  com.hyphenate.easeui.modules.chat.EaseChatLayout o-- com.hyphenate.easeui.modules.chat.EaseChatLayout.GroupListener : groupListener
+  com.hyphenate.easeui.modules.chat.EaseChatLayout +-down- com.hyphenate.easeui.modules.chat.EaseChatLayout.ChatRoomListener
+  com.hyphenate.easeui.modules.chat.EaseChatLayout +-down- com.hyphenate.easeui.modules.chat.EaseChatLayout.GroupListener
+  com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout .up.|> IChatMessageItemSet
+  com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout .up.|> IChatMessageListLayout
+  com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout .up.|> IChatMessageListView
+  com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout .up.|> IRecyclerViewHandle
+  com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout o-- com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout.OnChatErrorListener : errorListener
+  com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout o-- com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout.LoadDataType : loadDataType
+  com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout o-- com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout.LoadMoreStatus : loadMoreStatus
+  com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout o-- com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout.OnMessageTouchListener : messageTouchListener
+  com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout +-down- com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout.LoadDataType
+  com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout +-down- com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout.LoadMoreStatus
+  com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout +-down- com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout.OnChatErrorListener
+  com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout +-down- com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout.OnMessageTouchListener
+  com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout +-down- com.hyphenate.easeui.modules.chat.EaseChatMessageListLayout.ShowType
+  com.hyphenate.easeui.modules.chat.EaseChatPrimaryMenu .up.|> EaseInputEditText.OnEditTextChangeListener
+  com.hyphenate.easeui.modules.chat.EaseChatPrimaryMenu .up.|> IChatPrimaryMenu
+  com.hyphenate.easeui.modules.chat.EaseChatPrimaryMenu .up.|> TextWatcher
+  com.hyphenate.easeui.modules.chat.EaseChatPrimaryMenu .up.|> View.OnClickListener
+  com.hyphenate.easeui.modules.chat.EaseEmojiconMenu .up.|> IChatEmojiconMenu
+  com.hyphenate.easeui.modules.chat.EaseEmojiconMenu +-down- com.hyphenate.easeui.modules.chat.EaseEmojiconMenu.EmojiconPagerViewListener
+  com.hyphenate.easeui.modules.chat.EaseEmojiconMenu.EmojiconPagerViewListener .up.|> EaseEmojiconPagerView.EaseEmojiconPagerViewListener
+  com.hyphenate.easeui.modules.chat.EaseInputEditText .up.|> TextView.OnEditorActionListener
+  com.hyphenate.easeui.modules.chat.EaseInputEditText .up.|> View.OnKeyListener
+  com.hyphenate.easeui.modules.chat.EaseInputEditText o-- com.hyphenate.easeui.modules.chat.EaseInputEditText.OnEditTextChangeListener : listener
+  com.hyphenate.easeui.modules.chat.EaseInputEditText +-down- com.hyphenate.easeui.modules.chat.EaseInputEditText.OnEditTextChangeListener
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

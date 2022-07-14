@@ -1,0 +1,315 @@
+@startuml
+
+title __CHATROW's Class Diagram__\n
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatrow {
+        class com.hyphenate.easeui.widget.chatrow.AutolinkSpan {
+            + AutolinkSpan()
+            + onClick()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatrow {
+        abstract class com.hyphenate.easeui.widget.chatrow.EaseChatRow {
+            {static} # TAG : String
+            # ackedView : TextView
+            # adapter : Object
+            # bubbleLayout : View
+            # context : Context
+            # deliveredView : TextView
+            # inflater : LayoutInflater
+            # isSender : boolean
+            # itemClickListener : MessageListItemClickListener
+            # message : EMMessage
+            # percentageView : TextView
+            # position : int
+            # progressBar : ProgressBar
+            # showSenderType : boolean
+            # statusView : ImageView
+            # timeStampView : TextView
+            # userAvatarView : ImageView
+            # usernickView : TextView
+            - mainThreadHandler : Handler
+            + EaseChatRow()
+            + EaseChatRow()
+            + isSender()
+            + resetViewState()
+            + setTimestamp()
+            + setUpView()
+            + updateView()
+            # onDetachedFromWindow()
+            {abstract} # onFindViewById()
+            {abstract} # onInflateView()
+            # onMessageCreate()
+            # onMessageError()
+            # onMessageInProgress()
+            # onMessageSuccess()
+            {abstract} # onSetUpView()
+            # onViewUpdate()
+            # provideAvatarOptions()
+            # setAvatarAndNick()
+            # setAvatarOptions()
+            # setLayoutStyle()
+            # setTimestamp()
+            - getItemStyleHelper()
+            - initView()
+            - setClickListener()
+            - setItemStyle()
+            - setUpBaseView()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatrow {
+        class com.hyphenate.easeui.widget.chatrow.EaseChatRow.EaseChatCallback {
+            + onError()
+            + onProgress()
+            + onSuccess()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatrow {
+        interface com.hyphenate.easeui.widget.chatrow.EaseChatRow.EaseChatRowActionCallback {
+            {abstract} + onBubbleClick()
+            {abstract} + onDetachedFromWindow()
+            {abstract} + onResendClick()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatrow {
+        class com.hyphenate.easeui.widget.chatrow.EaseChatRowBigExpression {
+            - imageView : ImageView
+            + EaseChatRowBigExpression()
+            + EaseChatRowBigExpression()
+            + onSetUpView()
+            # onFindViewById()
+            # onInflateView()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatrow {
+        class com.hyphenate.easeui.widget.chatrow.EaseChatRowCustom {
+            - contentView : TextView
+            - userUpdateListener : IAckUserUpdateListener
+            + EaseChatRowCustom()
+            + EaseChatRowCustom()
+            + onAckUserUpdate()
+            + onSetUpView()
+            # onFindViewById()
+            # onInflateView()
+            # onMessageCreate()
+            # onMessageError()
+            # onMessageInProgress()
+            # onMessageSuccess()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatrow {
+        class com.hyphenate.easeui.widget.chatrow.EaseChatRowFile {
+            # fileNameView : TextView
+            # fileSizeView : TextView
+            # fileStateView : TextView
+            {static} - TAG : String
+            - fileMessageBody : EMNormalFileMessageBody
+            + EaseChatRowFile()
+            + EaseChatRowFile()
+            # onFindViewById()
+            # onInflateView()
+            # onMessageCreate()
+            # onMessageError()
+            # onMessageInProgress()
+            # onMessageSuccess()
+            # onSetUpView()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatrow {
+        class com.hyphenate.easeui.widget.chatrow.EaseChatRowImage {
+            # imageView : ImageView
+            - imgBody : EMImageMessageBody
+            + EaseChatRowImage()
+            + EaseChatRowImage()
+            # onFindViewById()
+            # onInflateView()
+            # onMessageInProgress()
+            # onMessageSuccess()
+            # onSetUpView()
+            # onViewUpdate()
+            - showImageView()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatrow {
+        class com.hyphenate.easeui.widget.chatrow.EaseChatRowLocation {
+            - locBody : EMLocationMessageBody
+            - locationView : TextView
+            - tvLocationName : TextView
+            + EaseChatRowLocation()
+            + EaseChatRowLocation()
+            # onFindViewById()
+            # onInflateView()
+            # onMessageCreate()
+            # onMessageError()
+            # onMessageInProgress()
+            # onMessageSuccess()
+            # onSetUpView()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatrow {
+        class com.hyphenate.easeui.widget.chatrow.EaseChatRowText {
+            - contentView : TextView
+            - translationContainer : View
+            - translationContentView : TextView
+            - translationStatusView : ImageView
+            - userUpdateListener : IAckUserUpdateListener
+            + EaseChatRowText()
+            + EaseChatRowText()
+            + onAckUserUpdate()
+            + onSetUpView()
+            # onFindViewById()
+            # onInflateView()
+            # onMessageCreate()
+            # onMessageError()
+            # onMessageInProgress()
+            # onMessageSuccess()
+            - replaceSpan()
+            - setStatus()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatrow {
+        class com.hyphenate.easeui.widget.chatrow.EaseChatRowVideo {
+            {static} - TAG : String
+            - imageView : ImageView
+            - playView : ImageView
+            - sizeView : TextView
+            - timeLengthView : TextView
+            + EaseChatRowVideo()
+            + EaseChatRowVideo()
+            # onFindViewById()
+            # onInflateView()
+            # onSetUpView()
+            - setBubbleView()
+            - showVideoThumbView()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatrow {
+        class com.hyphenate.easeui.widget.chatrow.EaseChatRowVoice {
+            {static} - TAG : String
+            - readStatusView : ImageView
+            - voiceAnimation : AnimationDrawable
+            - voiceImageView : ImageView
+            - voiceLengthView : TextView
+            + EaseChatRowVoice()
+            + EaseChatRowVoice()
+            + startVoicePlayAnimation()
+            + stopVoicePlayAnimation()
+            # onFindViewById()
+            # onInflateView()
+            # onSetUpView()
+            # onViewUpdate()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace chatrow {
+        class com.hyphenate.easeui.widget.chatrow.EaseChatRowVoicePlayer {
+            {static} - TAG : String
+            - audioManager : AudioManager
+            - baseContext : Context
+            {static} - instance : EaseChatRowVoicePlayer
+            - mediaPlayer : MediaPlayer
+            - onCompletionListener : OnCompletionListener
+            - playingId : String
+            + getCurrentPlayingId()
+            {static} + getInstance()
+            + getPlayer()
+            + isPlaying()
+            + play()
+            + release()
+            + stop()
+            - EaseChatRowVoicePlayer()
+            - setSpeaker()
+        }
+      }
+    }
+  }
+  
+
+  com.hyphenate.easeui.widget.chatrow.EaseChatRow o-- com.hyphenate.easeui.widget.chatrow.EaseChatRow.EaseChatCallback : chatCallback
+  com.hyphenate.easeui.widget.chatrow.EaseChatRow o-- com.hyphenate.easeui.widget.chatrow.EaseChatRow.EaseChatRowActionCallback : itemActionCallback
+  com.hyphenate.easeui.widget.chatrow.EaseChatRow +-down- com.hyphenate.easeui.widget.chatrow.EaseChatRow.EaseChatCallback
+  com.hyphenate.easeui.widget.chatrow.EaseChatRow +-down- com.hyphenate.easeui.widget.chatrow.EaseChatRow.EaseChatRowActionCallback
+  com.hyphenate.easeui.widget.chatrow.EaseChatRow.EaseChatCallback .up.|> EMCallBack
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

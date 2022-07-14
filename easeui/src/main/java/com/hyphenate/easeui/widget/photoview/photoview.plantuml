@@ -1,0 +1,411 @@
+@startuml
+
+title __PHOTOVIEW's Class Diagram__\n
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace photoview {
+        class com.hyphenate.easeui.widget.photoview.Compat {
+            {static} - SIXTY_FPS_INTERVAL : int
+            {static} + postOnAnimation()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace photoview {
+        class com.hyphenate.easeui.widget.photoview.EasePhotoView {
+            - mAttacher : PhotoViewAttacher
+            - mPendingScaleType : ScaleType
+            + EasePhotoView()
+            + EasePhotoView()
+            + EasePhotoView()
+            + canZoom()
+            + getDisplayRect()
+            + getMaxScale()
+            + getMidScale()
+            + getMinScale()
+            + getScale()
+            + getScaleType()
+            + setAllowParentInterceptOnEdge()
+            + setImageDrawable()
+            + setImageResource()
+            + setImageURI()
+            + setMaxScale()
+            + setMidScale()
+            + setMinScale()
+            + setOnLongClickListener()
+            + setOnMatrixChangeListener()
+            + setOnPhotoTapListener()
+            + setOnViewTapListener()
+            + setScaleType()
+            + setZoomable()
+            + zoomTo()
+            # onDetachedFromWindow()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace photoview {
+        interface com.hyphenate.easeui.widget.photoview.IPhotoView {
+            {abstract} + canZoom()
+            {abstract} + getDisplayRect()
+            {abstract} + getMaxScale()
+            {abstract} + getMidScale()
+            {abstract} + getMinScale()
+            {abstract} + getScale()
+            {abstract} + getScaleType()
+            {abstract} + setAllowParentInterceptOnEdge()
+            {abstract} + setMaxScale()
+            {abstract} + setMidScale()
+            {abstract} + setMinScale()
+            {abstract} + setOnLongClickListener()
+            {abstract} + setOnMatrixChangeListener()
+            {abstract} + setOnPhotoTapListener()
+            {abstract} + setOnViewTapListener()
+            {abstract} + setScaleType()
+            {abstract} + setZoomable()
+            {abstract} + zoomTo()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace photoview {
+        class com.hyphenate.easeui.widget.photoview.PhotoViewAttacher {
+            {static} + DEFAULT_MAX_SCALE : float
+            {static} + DEFAULT_MIN_SCALE : float
+            {static} ~ DEBUG : boolean
+            {static} ~ EDGE_BOTH : int
+            {static} ~ EDGE_LEFT : int
+            {static} ~ EDGE_NONE : int
+            {static} ~ EDGE_RIGHT : int
+            {static} ~ LOG_TAG : String
+            - mAllowParentInterceptOnEdge : boolean
+            - mBaseMatrix : Matrix
+            - mDisplayRect : RectF
+            - mDrawMatrix : Matrix
+            - mGestureDetector : GestureDetector
+            - mImageView : WeakReference<ImageView>
+            - mIvBottom : int
+            - mIvLeft : int
+            - mIvRight : int
+            - mIvTop : int
+            - mLongClickListener : OnLongClickListener
+            - mMatrixValues : float[]
+            - mMaxScale : float
+            - mMinScale : float
+            - mScaleDragDetector : VersionedGestureDetector
+            - mScaleType : ScaleType
+            - mScrollEdge : int
+            - mSuppMatrix : Matrix
+            - mViewTreeObserver : ViewTreeObserver
+            - mZoomEnabled : boolean
+            + PhotoViewAttacher()
+            + canZoom()
+            + cleanup()
+            + getDisplayRect()
+            + getImageView()
+            + getMaxScale()
+            + getMidScale()
+            + getMinScale()
+            + getScale()
+            + getScaleType()
+            + onDoubleTap()
+            + onDoubleTapEvent()
+            + onDrag()
+            + onFling()
+            + onGlobalLayout()
+            + onScale()
+            + onSingleTapConfirmed()
+            + onTouch()
+            + setAllowParentInterceptOnEdge()
+            + setMaxScale()
+            + setMidScale()
+            + setMinScale()
+            + setOnLongClickListener()
+            + setOnMatrixChangeListener()
+            + setOnPhotoTapListener()
+            + setOnViewTapListener()
+            + setScaleType()
+            + setZoomable()
+            + update()
+            + zoomTo()
+            # getDisplayMatrix()
+            - cancelFling()
+            - checkAndDisplayMatrix()
+            - checkImageViewScaleType()
+            - checkMatrixBounds()
+            {static} - checkZoomLevels()
+            - getDisplayRect()
+            - getValue()
+            {static} - hasDrawable()
+            {static} - isSupportedScaleType()
+            - resetMatrix()
+            - setImageViewMatrix()
+            {static} - setImageViewScaleTypeMatrix()
+            - updateBaseMatrix()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace photoview {
+        class com.hyphenate.easeui.widget.photoview.PhotoViewAttacher.AnimatedZoomRunnable {
+            {static} ~ ANIMATION_SCALE_PER_ITERATION_IN : float
+            {static} ~ ANIMATION_SCALE_PER_ITERATION_OUT : float
+            - mDeltaScale : float
+            - mFocalX : float
+            - mFocalY : float
+            - mTargetZoom : float
+            + AnimatedZoomRunnable()
+            + run()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace photoview {
+        class com.hyphenate.easeui.widget.photoview.PhotoViewAttacher.FlingRunnable {
+            - mCurrentX : int
+            - mCurrentY : int
+            - mScroller : ScrollerProxy
+            + FlingRunnable()
+            + cancelFling()
+            + fling()
+            + run()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace photoview {
+        interface com.hyphenate.easeui.widget.photoview.PhotoViewAttacher.OnMatrixChangedListener {
+            {abstract} + onMatrixChanged()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace photoview {
+        interface com.hyphenate.easeui.widget.photoview.PhotoViewAttacher.OnPhotoTapListener {
+            {abstract} + onPhotoTap()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace photoview {
+        interface com.hyphenate.easeui.widget.photoview.PhotoViewAttacher.OnViewTapListener {
+            {abstract} + onViewTap()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace photoview {
+        class com.hyphenate.easeui.widget.photoview.SDK16 {
+            {static} + postOnAnimation()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace photoview {
+        abstract class com.hyphenate.easeui.widget.photoview.ScrollerProxy {
+            {abstract} + computeScrollOffset()
+            {abstract} + fling()
+            {abstract} + forceFinished()
+            {abstract} + getCurrX()
+            {abstract} + getCurrY()
+            {static} + getScroller()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace photoview {
+        class com.hyphenate.easeui.widget.photoview.ScrollerProxy.GingerScroller {
+            - mScroller : OverScroller
+            + GingerScroller()
+            + computeScrollOffset()
+            + fling()
+            + forceFinished()
+            + getCurrX()
+            + getCurrY()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace photoview {
+        class com.hyphenate.easeui.widget.photoview.ScrollerProxy.PreGingerScroller {
+            - mScroller : Scroller
+            + PreGingerScroller()
+            + computeScrollOffset()
+            + fling()
+            + forceFinished()
+            + getCurrX()
+            + getCurrY()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace photoview {
+        abstract class com.hyphenate.easeui.widget.photoview.VersionedGestureDetector {
+            {static} ~ LOG_TAG : String
+            {abstract} + isScaling()
+            {static} + newInstance()
+            {abstract} + onTouchEvent()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace photoview {
+        class com.hyphenate.easeui.widget.photoview.VersionedGestureDetector.CupcakeDetector {
+            ~ mLastTouchX : float
+            ~ mLastTouchY : float
+            ~ mMinimumVelocity : float
+            ~ mTouchSlop : float
+            - mIsDragging : boolean
+            - mVelocityTracker : VelocityTracker
+            + CupcakeDetector()
+            + isScaling()
+            + onTouchEvent()
+            ~ getActiveX()
+            ~ getActiveY()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace photoview {
+        class com.hyphenate.easeui.widget.photoview.VersionedGestureDetector.EclairDetector {
+            {static} - INVALID_POINTER_ID : int
+            - mActivePointerId : int
+            - mActivePointerIndex : int
+            + EclairDetector()
+            + onTouchEvent()
+            ~ getActiveX()
+            ~ getActiveY()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace photoview {
+        class com.hyphenate.easeui.widget.photoview.VersionedGestureDetector.FroyoDetector {
+            - mDetector : ScaleGestureDetector
+            - mScaleListener : OnScaleGestureListener
+            + FroyoDetector()
+            + isScaling()
+            + onTouchEvent()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.hyphenate.easeui {
+    namespace widget {
+      namespace photoview {
+        interface com.hyphenate.easeui.widget.photoview.VersionedGestureDetector.OnGestureListener {
+            {abstract} + onDrag()
+            {abstract} + onFling()
+            {abstract} + onScale()
+        }
+      }
+    }
+  }
+  
+
+  com.hyphenate.easeui.widget.photoview.EasePhotoView .up.|> IPhotoView
+  com.hyphenate.easeui.widget.photoview.PhotoViewAttacher .up.|> GestureDetector.OnDoubleTapListener
+  com.hyphenate.easeui.widget.photoview.PhotoViewAttacher .up.|> IPhotoView
+  com.hyphenate.easeui.widget.photoview.PhotoViewAttacher .up.|> VersionedGestureDetector.OnGestureListener
+  com.hyphenate.easeui.widget.photoview.PhotoViewAttacher .up.|> View.OnTouchListener
+  com.hyphenate.easeui.widget.photoview.PhotoViewAttacher .up.|> ViewTreeObserver.OnGlobalLayoutListener
+  com.hyphenate.easeui.widget.photoview.PhotoViewAttacher o-- com.hyphenate.easeui.widget.photoview.PhotoViewAttacher.FlingRunnable : mCurrentFlingRunnable
+  com.hyphenate.easeui.widget.photoview.PhotoViewAttacher o-- com.hyphenate.easeui.widget.photoview.PhotoViewAttacher.OnMatrixChangedListener : mMatrixChangeListener
+  com.hyphenate.easeui.widget.photoview.PhotoViewAttacher o-- com.hyphenate.easeui.widget.photoview.PhotoViewAttacher.OnPhotoTapListener : mPhotoTapListener
+  com.hyphenate.easeui.widget.photoview.PhotoViewAttacher o-- com.hyphenate.easeui.widget.photoview.PhotoViewAttacher.OnViewTapListener : mViewTapListener
+  com.hyphenate.easeui.widget.photoview.PhotoViewAttacher +-down- com.hyphenate.easeui.widget.photoview.PhotoViewAttacher.AnimatedZoomRunnable
+  com.hyphenate.easeui.widget.photoview.PhotoViewAttacher +-down- com.hyphenate.easeui.widget.photoview.PhotoViewAttacher.FlingRunnable
+  com.hyphenate.easeui.widget.photoview.PhotoViewAttacher +-down- com.hyphenate.easeui.widget.photoview.PhotoViewAttacher.OnMatrixChangedListener
+  com.hyphenate.easeui.widget.photoview.PhotoViewAttacher +-down- com.hyphenate.easeui.widget.photoview.PhotoViewAttacher.OnPhotoTapListener
+  com.hyphenate.easeui.widget.photoview.PhotoViewAttacher +-down- com.hyphenate.easeui.widget.photoview.PhotoViewAttacher.OnViewTapListener
+  com.hyphenate.easeui.widget.photoview.PhotoViewAttacher.AnimatedZoomRunnable .up.|> Runnable
+  com.hyphenate.easeui.widget.photoview.PhotoViewAttacher.FlingRunnable .up.|> Runnable
+  com.hyphenate.easeui.widget.photoview.ScrollerProxy +-down- com.hyphenate.easeui.widget.photoview.ScrollerProxy.GingerScroller
+  com.hyphenate.easeui.widget.photoview.ScrollerProxy +-down- com.hyphenate.easeui.widget.photoview.ScrollerProxy.PreGingerScroller
+  com.hyphenate.easeui.widget.photoview.ScrollerProxy.GingerScroller -up-|> com.hyphenate.easeui.widget.photoview.ScrollerProxy
+  com.hyphenate.easeui.widget.photoview.ScrollerProxy.PreGingerScroller -up-|> com.hyphenate.easeui.widget.photoview.ScrollerProxy
+  com.hyphenate.easeui.widget.photoview.VersionedGestureDetector o-- com.hyphenate.easeui.widget.photoview.VersionedGestureDetector.OnGestureListener : mListener
+  com.hyphenate.easeui.widget.photoview.VersionedGestureDetector +-down- com.hyphenate.easeui.widget.photoview.VersionedGestureDetector.CupcakeDetector
+  com.hyphenate.easeui.widget.photoview.VersionedGestureDetector +-down- com.hyphenate.easeui.widget.photoview.VersionedGestureDetector.EclairDetector
+  com.hyphenate.easeui.widget.photoview.VersionedGestureDetector +-down- com.hyphenate.easeui.widget.photoview.VersionedGestureDetector.FroyoDetector
+  com.hyphenate.easeui.widget.photoview.VersionedGestureDetector +-down- com.hyphenate.easeui.widget.photoview.VersionedGestureDetector.OnGestureListener
+  com.hyphenate.easeui.widget.photoview.VersionedGestureDetector.CupcakeDetector -up-|> com.hyphenate.easeui.widget.photoview.VersionedGestureDetector
+  com.hyphenate.easeui.widget.photoview.VersionedGestureDetector.EclairDetector -up-|> com.hyphenate.easeui.widget.photoview.VersionedGestureDetector.CupcakeDetector
+  com.hyphenate.easeui.widget.photoview.VersionedGestureDetector.FroyoDetector -up-|> com.hyphenate.easeui.widget.photoview.VersionedGestureDetector.EclairDetector
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
